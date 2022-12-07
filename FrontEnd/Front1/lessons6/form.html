@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form</title>
+</head>
+
+<body>
+<h2>Текстовые типы input</h2>
+<form>
+   <p><label>Name</label><input type="text" name="first_mane" /></p>
+   <p><label>Last Name</label><input type="text" name="last_mane" /></p>
+</form>
+<h2>Радио кнопки form</h2>
+<form>
+<p><input type="radio" name="radio" value="Малина" checked /> Малина</p>
+<p><input type="radio" name="radio" value="Банан"  /> Банан</p>
+<p><input type="radio" name="radio" value="Апельсин"  /> Апельсин</p>
+</form>
+
+<h2>Кнопка отправить</h2>
+<form action="/action_page.php" target="_blank" method="get">
+ <fieldset>
+ <legend>Информация отправки:</legend>
+   <p><input type="text" name="first_mane"  placeholder="Name"/></p>
+   <p><input type="text" name="last_mane"  placeholder="Last Name"/></p>
+   <p><input type="submit" value="Отправить" /></p>
+   </fieldset>
+</form>
+
+<h2>Select</h2>
+<select name="cars" size="4" multiple>
+    <option >Выбрать</option>
+    <option value="Volvo">Volvo</option>
+    <option value="Kia">Kia</option>
+    <option value="fiat">Fiat</option>
+    <option value="Audi">Audi</option>
+    <option value="BMW">BMW</option>
+</select>
+
+<h2>Текстовая область</h2>
+<form>
+   <p><input type="text" name="first_mane2" /></p>
+   <p><input type="text" name="last_mane2" /></p>
+   <p><textarea name="message" rows="10" cols="30" ></textarea></p>
+   <button type="button" onClick="alert('Спасибо что кликнул');">Кликнуть на меня</button>
+</form>
+
+<h2>Datalist</h2>
+<form action="/contact.php">
+   <input list="flowers">
+   <datalist id="flowers">
+       <option>Пионы</option>
+       <option>Розы</option>
+       <option>Ромашки</option>
+       <option>Гвоздика</option>
+   </datalist>
+</form>
+<h2>TYPE</h2>
+<input type="button"  value="Отправить"/>
+<input type="checkbox" />
+<input type="color" />
+<input type="date" />
+<input type="datetime-local" />
+<input type="email" />
+<input type="file" />
+<input type="hidden" />
+<input type="image" />
+<input type="month" />
+<input type="number" />
+<input type="password" />
+<input type="radio" />
+<input type="range" />
+<input type="reset" />
+<input type="search" />
+<input type="submit" value="Отправить" />
+<input type="tel" />
+<input type="text" />
+<input type="url" />
+<input type="week" />
+<h2>Input Password</h2>
+<form>
+<input type="text" name="username"  placeholder="Ваше Имя" />
+<input type="password" name="psw" placeholder="Ведите Пароль" />
+</form>
+<h2>Input Password value</h2>
+<form>
+<input type="text" name="username"  value="Ваше Имя" />
+<input type="password" name="psw" value="Ведите Пароль" />
+</form>
+<h2>Input Password reset</h2>
+<form>
+<input type="text" name="username"  placeholder="Ваше Имя" />
+<input type="password" name="psw" placeholder="Ведите Пароль" />
+<input type="submit" value="Отправить" />
+<input type="reset" />
+</form>
+<h2>Input Checkbox</h2>
+<form>
+<input type="checkbox" name="cofe"> I have a cofe
+<input type="checkbox" name="tea"> I have a tea
+</form>
+<h3>HTML 5</h3>
+<h2>Input color</h2>
+<form>
+<input type="color" name="favcolor" />
+</form>
+<h2>Input date</h2>
+<form>
+<input type="date" name="day" max="1970-12-31" />
+<input type="date" name="day" max="2000-02-10" />
+</form>
+<h2>Input datetime-local</h2>
+<form>
+<input type="datetime-local" name="daytime" />
+</form>
+<h2>Input email</h2>
+<form>
+<input type="email" name="email"  required placeholder="E-mail *"/>
+<button>Отправить</button>
+</form>
+<h2>Input month</h2>
+<form>
+<input type="month" name="month" />
+</form>
+<h2>Input number</h2>
+<form>
+<input type="number" name="number"  min="2" max="5" />
+</form>
+<h2>Input maxlength minlength</h2>
+<form>
+<input type="text" name="username"  placeholder="Ваше Имя"  maxlength="10"/><br/>
+<input type="tel" name="tel"  placeholder="(099)-999-99-99" maxlength="10"/><br/>
+<input type="email" name="email" placeholder="Ведите E-mail" maxlength="10"/><br/>
+<textarea name="textarea" maxlength="60"></textarea><br/>
+<button>Отправить</button>
+</form>
+<h2>Input range</h2>
+<form>
+<input type="range" name="range" min="0" max="80"/><br/>
+<button>Отправить</button>
+</form>
+<h2>Input tel pattern</h2>
+<form>
+<input type="tel" name="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"/><br/>
+<button>Отправить</button>
+</form>
+</body>
+</html>
