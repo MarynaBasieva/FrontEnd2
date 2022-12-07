@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>table</title>
+</head>
+
+<body>
+	<table border="1">
+		<thead>
+			<h2>Table title</h2>
+		</thead>
+		<tbody>
+			<tr>
+				<th>first Column</th>
+				<th>second Column</th>
+				<th rowspan="5">last Column</th>
+			</tr>
+			<tr>
+				<td>row first1 cell1</td>
+				<td>row second1 cell2</td>
+			</tr>
+			<tr>
+				<td>row first2 cell1</td>
+				<td rowspan="2">row second2 cell2</td>
+			</tr>
+			<tr>
+				<td>row first3 cell1</td>
+			</tr>
+			<tr>
+				<td colspan="2">row first4 cell1</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th colspan="3">tfoot first4 cell1</th>
+			</tr>
+		</tfoot>
+	</table>
+	<h2>Two Table</h2>
+	<table border="1" cellspacing="0" cellpadding="10" align="center">
+		<tr>
+			<th>first Column</th>
+			<th>second Column</th>
+			<th rowspan="6">last Column</th>
+		</tr>
+		
+		<tr>
+			<td>row1 cell1</td>
+			<td>row1 cell2</td>
+		</tr>
+		
+		<tr>
+			<td rowspan="2">row2 cell1</td>
+			<td>row2 cell2</td>
+		</tr>
+		
+		<tr>
+			<td>row3 cell2</td>
+		</tr>
+		
+		<tr align="center">
+			<td colspan="2">row4 cell1</td>
+		</tr>
+		
+		<tr>
+			<td>row5 cell1</td>
+			<td>row5 cell2</td>
+		</tr>
+		
+		<tr align="center">
+			<td colspan="3">row6 cell1</td>
+		</tr>
+	</table>
+</body>
+</html>
