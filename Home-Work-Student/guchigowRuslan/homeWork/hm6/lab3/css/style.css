@@ -5,3 +5,10 @@ body {
 form {
     margin-bottom: 100px;
 }
+.star{
+    color: red;
+}
+.info {
+    font-size: 15px;
+    font-style: italic;
+}

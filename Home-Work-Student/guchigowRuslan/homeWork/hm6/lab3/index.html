@@ -29,15 +29,18 @@
     <form action="#">
         <fieldset>
             <legend>Заказ услуги</legend>
-            <p><label>Name <input type="text" required maxlength="20"></label></p>
-            <p><label>Phone <input type="tel" required></label></p>
-            <p><label>Email <input type="email" name=""></label></p>
+            <p><label>Name<span class="star">*</span> <input placeholder="Your name" type="text" required
+                        maxlength="20"></label></p>
+            <p><label>Phone<span class="star">*</span> <input placeholder="Your phone" type="tel" required></label></p>
+            <p><label>Email <input type="email" placeholder="Your email" name=""></label></p>
+            <p>Выберите:</p>
             <select>
                 <option value="landing">Разработка Landing Page</option>
                 <option value="corporate">Разработка корпоративного сайта</option>
                 <option selected value="online">Разработка интернет-магазина</option>
             </select>
-            <p><button>Submit</button></p>
+            <p><button>Отправить</button></p>
+            <p class="info"><span class="star">*</span> - обязательные поля</p>
         </fieldset>
     </form>
 </body>
