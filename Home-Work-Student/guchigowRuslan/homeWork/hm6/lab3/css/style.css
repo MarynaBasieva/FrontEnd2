@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(206, 194, 194);
+    margin: 20px;
+}
+form {
+    margin-bottom: 100px;
+}
+.star{
+    color: red;
+}
+.info {
+    font-size: 15px;
+    font-style: italic;
+}
