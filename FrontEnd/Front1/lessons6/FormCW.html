@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form</title>
+</head>
+
+<body>
+	<form action="contact.php">
+		<input type="text" placeholder="Name" required maxlength="20" />
+		<input type="email" placeholder="E-mail" />
+		<input type="tel" placeholder="Phone" required />
+		<textarea placeholder="Message"></textarea>
+		<input type="radio" name="radio1" value="Radio1"/>Radio1 
+		<input type="radio" value="Radio2"/>Radio2
+		<input type="radio" checked/> Radio3
+		<input type="radio"  disabled/> Radio4
+		<input type="radio" /> Radio5
+		<input type="radio" /> Radio6
+		<input type="radio" /> Radio7
+			<select>
+				<option>Option1</option>
+				<option>Option2</option>
+				<option>Option3</option>
+			</select>
+		<button>Submit</button>
+		
+		<!--<input type="button" value="Submit" />
+		<input type="submit" value="Submit"/>-->
+	</form>
+	
+	<form  action="action.php" target="_blank" method="post">
+		<p>
+			<input type="text" name="first-name" placeholder="Your Name" required maxlength="20" />
+		</p>
+		<p>
+			<input type="text" name="last-name" placeholder="Your last Name" required maxlength="20" />
+		</p>
+		<p>
+			<input type="tel" name="tel" placeholder="Your Phone" maxlength="20" required/>
+		</p>
+		<p>
+			<input type="email" name="email" placeholder="Your E-mail" minlength="20" />
+		</p>
+		<p>
+			<textarea name="textarea" placeholder="Your message"></textarea>
+			
+		</p>
+		<p>
+			<input type="radio"  name="big"/>Radio1 
+		<input type="radio" name="big"/>Radio2
+		<input type="radio" name="big"/> Radio3
+		</p>
+		<p>
+			<button>Send</button>
+		</p>
+	</form>
+</body>
+</html>

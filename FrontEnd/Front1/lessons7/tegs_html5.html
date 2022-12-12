@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Документ без названия</title>
+</head>
+
+<body>
+<h2>meter</h2>
+  <meter value="0" max="100" low="10" high="60">Низкая</meter>
+  <meter value="30" max="100" low="10" high="60">Нормальная</meter>
+  <meter value="80" max="100" low="10" high="60">Горячая</meter>
+  <meter value="100" max="100">Кипяток</meter>
+  
+  
+  <h2>progress</h2>
+  <progress max="100" value="25">
+    Загружено на <span id="value">25</span>%
+  </progress>
+  
+    <h2>datalist</h2>
+ <p><input list="character">
+   <datalist id="character">
+    <option value="Чебурашка"></option>
+    <option value="Крокодил Гена"></option>
+    <option value="Шапокляк"></option>
+   </datalist></p>
+   
+   
+    <h2>details</h2>
+   <details>
+   <summary>Текст</summary>
+   <p>Покажи, что у тебя есть!</p>
+   </details>
+   
+       <h2>output</h2>
+       
+   <form oninput="result.value=(cm.value/2.54).toFixed(2)">
+    <p>Введите длину в сантиметрах: 
+    <input type="number" name="cm" autofocus></p>
+    <p>Длина в дюймах: <output name="result">0</output></p>
+  </form>
+  
+  <h2>time</h2>
+  <article>
+   <p><time>1957-10-04</time> запущен первый искусственный спутник Земли.</p>
+   <p><time>1960-08-19</time> первый полет собак в космос.</p>
+   <p><time>1961-04-12</time> первый полет человека в космос.</p>
+   <p><time>1963-06-16</time> первый полет женщины-космонавта.</p>
+   <p><time>1969-07-21</time> высадка человека на Луну.</p>
+  </article>
+  
+  
+  <h2>audio</h2>
+  <audio  autoplay loop>
+    <source src="https://www.thesoundarchive.com/starwars/star-wars-theme-song.mp3" type="audio/ogg; codecs=vorbis" />
+    <source src="https://www.thesoundarchive.com/starwars/star-wars-theme-song.mp3" type="audio/mpeg" />
+    Тег audio не поддерживается вашим браузером. 
+    <a href="audio/music.mp3">Скачайте музыку</a>.
+  </audio>
+  
+    <h2>video</h2>
+    <video id="video_background" preload="auto" autoplay loop muted width="500" height="auto">
+<source src="video/intro-video-lg.mp4" type="video/mp4" /> 
+<source src="video/intro-video-lg.webm" type="video/webm" />
+<source src="video/intro-video-lg.ogv" type="video/ogv" />
+</video>
+
+</body>
+</html>
