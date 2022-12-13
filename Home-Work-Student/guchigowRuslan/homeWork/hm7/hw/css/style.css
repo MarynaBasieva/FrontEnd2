@@ -44,3 +44,25 @@ ul{
 a{
     text-decoration: none;
 }
+.h404{
+    color: tomato;
+    font-size: 80px;
+    text-align: center;
+}
+.d404{
+    text-align: center;
+}
+.d404 img{
+    border: 1px solid black;
+    margin: 10px;
+}
+.revert{
+    font-size: 50px;
+}
+.on404{
+    text-align: center;
+}
+.on404 a{
+    font-size: 30px;
+    color: red;
+}
