@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+  <loc>https://astanahub.com/en/</loc>
+  <lastmod>2022-12-17T16:28:12+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1.0</priority>
+</url>
+<url>
+  <loc>https://astanahub.com/en/contacts/</loc>
+  <lastmod>2022-12-17T16:28:12+00:00</lastmod>
+  <changefreq>never</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://astanahub.com/en/l/h/about-us</loc>
+  <lastmod>2022-12-17T16:28:12+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://astanahub.com/en/infrastructure/map/</loc>
+  <lastmod>2022-12-17T16:28:12+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://astanahub.com/ru/l/partner-resources</loc>
+  <lastmod>2022-12-17T16:28:12+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://astanahub.com/ru/infrastructure/</loc>
+  <lastmod>2022-12-17T16:28:12+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://astanahub.com/ru/infrastructure/c46/1/</loc>
+  <lastmod>2022-12-17T16:28:12+00:00</lastmod>
+  <changefreq>never</changefreq>
+  <priority>0.4</priority>
+</url>
+<url>
+  <loc>https://astanahub.com/ru/infrastructure/c45/1/</loc>
+  <lastmod>2022-12-17T16:28:12+00:00</lastmod>
+  <changefreq>never</changefreq>
+  <priority>0.4</priority>
+</url>
