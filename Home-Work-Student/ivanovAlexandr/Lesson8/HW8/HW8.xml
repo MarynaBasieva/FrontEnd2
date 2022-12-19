@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+  <loc>https://open-almaty.kz/ru</loc>
+  <lastmod>2022-12-17T14:02:34+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1.0</priority>
+</url>
+<url>
+  <loc>https://open-almaty.kz/ru/category</loc>
+  <lastmod>2022-12-17T14:22:34+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://open-almaty.kz/ru/spravochnaia-informacia</loc>
+  <lastmod>2022-12-17T14:31:31+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://open-almaty.kz/ru/contact-us</loc>
+  <lastmod>2022-12-17T14:05:00+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://open-almaty.kz/ru/kategorii-zhs/obrazovanie</loc>
+  <lastmod>2022-12-17T16:18:27+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://open-almaty.kz/ru/kategorii-zhs/zhile</loc>
+  <lastmod>2022-12-17T15:28:16+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://open-almaty.kz/ru/content/almalinskiy-rayon</loc>
+  <lastmod>2022-12-17T16:18:30+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.4</priority>
+</url>
+<url>
+  <loc>https://open-almaty.kz/ru/content/filial-respublikanskogo-islamskogo-religioznogo-obedineniya-duhovnoe-upravlenie-musulman</loc>
+  <lastmod>2022-12-17T16:18:30+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.4</priority>
+</url>
+<url>
+  <loc>https://open-almaty.kz/ru/content/spravochnik-nepravitelstvennyh-organizaciy-goroda-almaty</loc>
+  <lastmod>2022-12-17T16:18:30+00:00</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.4</priority>
+</url>
+<url>
+  <loc>https://open-almaty.kz/ru/13-iyulya-2020-goda-den-obshchenacionalnogo-traura-v-respublike-kazahstan</loc>
+  <lastmod>2022-12-17T16:26:20+00:00</lastmod>
+  <changefreq>never</changefreq>
+  <priority>0.3</priority>
+</url>
+<url>
+  <loc>https://open-almaty.kz/ru/postanovlenie-glavnogo-gosudarstvennogo-sanitarnogo-vracha-goroda-almaty-no-46-ot-03072020-g</loc>
+  <lastmod>2022-12-17T14:57:14+00:00</lastmod>
+  <changefreq>never</changefreq>
+  <priority>0.3</priority>
+</url>

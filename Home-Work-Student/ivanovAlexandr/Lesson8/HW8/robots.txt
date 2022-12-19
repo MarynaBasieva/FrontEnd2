@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /author/
+Host: https://site.com
+Sitemap: http://site.com/sitemap.xml
+
+User-agent: Yandex
+Host: https://site.com
+Sitemap: http://site.com/sitemap.xml
