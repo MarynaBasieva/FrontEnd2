@@ -1,3 +1,0 @@
-
-
-Redirect 301 /404.html /index.html
