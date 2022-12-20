@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassWork9
+    </title>
+    <style>
+        #main {
+        background: url(phon.jpg) no-repeat top center/cover;
+        background-attachment: fixed;
+        }
+
+        #first {
+        background-color: rgba(0, 0, 0, 0.096);
+        font-family: "Brush Script MT", Brush Script Std, cursive;    
+        text-align: center;
+        border: 2px solid black;
+        width: 50%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 50px;
+        color:mediumorchid;
+        text-shadow: 1px 0 1px #000, 
+        0 1px 1px #000, 
+        -1px 0 1px #000, 
+        0 -1px 1px #000;
+        }
+
+        #second {
+        background-color: rgba(0, 0, 0, 0.096);    
+        font-family: "Brush Script MT", Brush Script Std, cursive;
+        width: 50%;    
+        text-align: center;
+        border: 2px solid black;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 20px;
+        color:rgb(25, 52, 202); 
+        text-shadow: 1px 0 1px #000, 
+        0 1px 1px #000, 
+        -1px 0 1px #000, 
+        0 -1px 1px #000; 
+        }
+
+        #info {
+        font-family: "Brush Script MT", Brush Script Std, cursive;    
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 30px;
+        color:rgb(25, 52, 202); 
+        text-shadow: 1px 0 1px #000, 
+        0 1px 1px #000, 
+        -1px 0 1px #000, 
+        0 -1px 1px #000;
+        }
+
+        #third {
+        font-family: "Brush Script MT", Brush Script Std, cursive;    
+        background-color: #11ffee00;
+        color: rgb(25, 52, 202);
+        border:2px solid #41025a;
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        }
+
+        .button1 {border-radius: 20px;}
+        #third.button1:hover {
+        background-color: #008CBA;
+        color: white;
+        }
+
+    </style>
+</head>
+<body>
+<div id="main">
+    <div id="first">
+        <h1>Homework-9</h1>
+        <p>CSS-styles</p>
+        <p id="info">формальный язык описания внешнего вида документа (веб-страницы), написанного с использованием языка разметки (чаще всего HTML или XHTML). Также может применяться к любым XML-документам, например, к SVG или XUL.</p>
+    </div>
+
+    <div id="second">
+    <h2>Form</h2>
+<form action="action.php target=_blank" method="post">
+<p>Username::
+<input type="text" name="first-name" required placeholder="name" id="" required maxlength="20">
+</p>
+<p>Telephone:
+<input type="text" name="phonenumber" required placeholder="telephone" id=""> 
+</p>
+<p> 
+<textarea name="" id="" required placeholder="Поле для заметок" cols="30" rows="10" maxlength="200"></textarea>
+</p>
+<button id="third" class="button button1">Send</button>  
+    </div> 
+</div>
+</body>
+</html>
