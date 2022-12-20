@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+}
+article {
+    width: 60%;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    margin: 20px;
+}
+
+p {
+    margin: 10px;
+}
+
+h1 {
+    color: red;
+}
+
+h2 {
+    color: purple;
+}
+
+
+h3 {
+    color: orange;
+}
