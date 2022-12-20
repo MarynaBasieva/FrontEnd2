@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.paralax {
+  padding: 150px;
+  background: url("../img/wall.jpg") no-repeat top center / cover;
+  background-attachment: fixed;
+}
+
+.content {
+  width: 50%;
+  color: #ffffff;
+
+}
+h1 {
+  background-color: rgba(161, 4, 4, 0.589);
+  margin: 1%;
+  padding: 10px;
+  text-align: center;
+}
+
+.content p {
+  color: #000000;
+  background-color: #ffffff5d;
+}
+
+.form {
+  width: 50%;
+  max-width: 900px;
+  text-align: center;
+  background-color: #ffffff5d;
+  color: #000000;
+}
+
+.form * {
+  padding: 5px;
+}
+
+.form p {
+  font-size: 20px;
+  color: rgb(221, 20, 20);;
+}
+
+fieldset {
+  border: none;
+}
