@@ -1,47 +1,50 @@
-body {
+* {
   margin: 0;
   padding: 0;
 }
-.paralax {
-  padding: 150px;
+
+body {
+  height: 1000px;
   background: url("../img/wall.jpg") no-repeat top center / cover;
   background-attachment: fixed;
 }
 
-.content {
+body > div {
   width: 50%;
-  color: #ffffff;
-
+  margin: 3%;
+  background-color: #2a0adf5d;
 }
+
 h1 {
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
   background-color: rgba(161, 4, 4, 0.589);
-  margin: 1%;
-  padding: 10px;
-  text-align: center;
 }
 
-.content p {
-  color: #000000;
-  background-color: #ffffff5d;
-}
-
-.form {
-  width: 50%;
-  max-width: 900px;
-  text-align: center;
-  background-color: #ffffff5d;
+.block1 p {
+  padding: 50px;
+  font-weight: 600;
   color: #000000;
 }
 
-.form * {
-  padding: 5px;
+input {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 10px;
 }
-
-.form p {
+.block2 p {
   font-size: 20px;
-  color: rgb(221, 20, 20);;
+  color: rgb(0, 0, 0);;
+}
+
+legend {
+  text-align: center;
+  font-size: 15px;
+  color: #ffffff;
 }
 
 fieldset {
-  border: none;
+  margin: 0 auto;
+  width: 200px;
 }
