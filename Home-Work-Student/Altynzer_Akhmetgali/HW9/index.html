@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url("images/bg.webp") no-repeat center / cover;
+            height: 100vh;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .blocks {
+            width: 80%;
+            min-width: 850px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            column-gap: 20px;
+            color: white;
+        }
+
+        .block-1 {
+            width: 50%;
+            max-width: 500px;
+            background: rgb(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+
+        .block-1 p {
+            text-align: justify;
+        }
+
+        .block-1 img {
+            width: 100%;
+        }
+
+        .block-2 {
+            width: 50%;
+            background: rgb(0, 0, 0, 0.5);
+            padding: 20px;
+            height: 100%;
+        }
+
+        .block-2 input,
+        .block-2 textarea {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Домашняя работа номер 9</h1>
+    <div class="blocks">
+        <div class="block-1">       
+            <fieldset>
+                <legend>
+                    <h2>Нью Йорк</h2>
+                </legend>
+                <p>Нью-Йорк включает пять боро (районов), расположенных в месте впадения реки Гудзон в Атлантический
+                    океан. В центре города расположен густонаселенный Манхэттен – один из крупнейших в мире
+                    коммерческих, финансовых и культурных центров. Главные достопримечательности Нью-Йорка –
+                    многочисленные небоскребы, в том числе Эмпайр-стейт-билдинг, и огромный Центральный парк. На залитой
+                    неоновыми огнями площади Таймс-сквер расположен театр "Бродвей".</p>
+                <img src="images/ny.jpg" alt="NY">   
+            </fieldset>
+        </div>
+
+        <div class="block-2">
+            <form action="">
+                <fieldset>
+                    <legend>
+                        <h2>Заполни форму</h2>
+                    </legend>
+                    <p>
+                        <label for="name">Ваше имя</label>
+                        <input id="name" type="text" placeholder="Введите текст" required>
+                    </p>
+
+                    <p>
+                        <label for="phone">Ваш телефон</label>
+                        <input id="phone" type="tel" pattern="[0-9]{1} [0-9]{3} [0-9]{3} [0-9]{4}" placeholder="пример 7 747 666 3276"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="message">Ваш сообщение</label> 
+                        <textarea id="message" rows="3"  placeholder="Введите сообщение"></textarea>
+                    </p>
+
+                    <button type="submit">Отправить</button>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
