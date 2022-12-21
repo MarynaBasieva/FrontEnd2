@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Padding</title>
+</head>
+<style>
+	.parent_box{
+		width: 900px;
+		margin: 0 auto;
+	}
+	.box{
+		width: 100px;
+		height: 100px;
+		background: #1C54B8;
+		color: #fff;
+		margin-bottom: 20px;
+		box-sizing: border-box;
+		
+	}
+	.box1{
+		padding-left: 20px;
+	}
+	.box2{
+		padding-right: 20px;
+	}
+	.box3{
+		padding-bottom: 20px;
+	}
+	.box4{
+		padding-top: 20px;
+	}
+	.box5{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.box6{
+		padding: 20px;
+	}
+	.box7{
+		padding: 20px 0;
+	}
+	.box8{
+		padding: 0 20px;
+	}
+	.box9{
+		padding: 30px 20px 15px 10px;
+	}
+	.btn{
+		display: block;
+		text-decoration: none;
+		width: 200px;
+		padding: 10px 0;
+		font-size: 40px;
+		text-align: center;
+		background: #000B75;
+		line-height: 47px;
+		color: #fff;
+		transition: all ease 0.4s;
+		height: 50px;
+	}
+	.btn:hover{
+		background: #000000;
+		color: aqua;
+	}
+</style>
+<body>
+	<div class="parent_box">
+		<div class="box box1">box 1</div>
+		<div class="box box2">box 2</div>
+		<div class="box box3">box 3</div>
+		<div class="box box4">box 4</div>
+		<div class="box box5">box 5</div>
+		<div class="box box6">box 6</div>
+		<div class="box box7">box 7</div>
+		<div class="box box8">box 8</div>
+		<div class="box box9">box 9</div>
+		<div class="parent_btn">
+			<a class="btn" href="#">Button</a>
+		</div>
+	</div>
+</body>
+</html>
