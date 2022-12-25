@@ -1,0 +1,20 @@
+User-agent:*  (Доступ открытый для всех поисковых систем гугла)
+Allow: (Открываем сканирование страниц либо папки и файлы)
+Disallow: (Запрещаем сканировать страницы либо папки и файлы)
+Disallow: /admin/
+Disallow: /author/*
+Disallow: /autoptimize/
+Allow: /autoptimize/*.js
+Allow: /autoptimize/*.css
+
+Sitemap: https://site.com/sitemap.xml
+Sitemap: https://site.com/sitemap_images.xml
+Sitemap: https://site.com/sitemap_video.xml
+
+User-agent: Yandex (Открытый только для Yandex)
+
+Host: https://site.com
+
+
+User-agent: Googlebot (только для гугл)
+

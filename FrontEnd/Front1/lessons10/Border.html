@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Border</title>
+</head>
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	.parent_border{
+		width: 1170px;
+		margin: 0 auto;
+	}
+	.border{
+		width: 200px;
+		height: 200px;
+		box-sizing: border-box;
+		margin-bottom: 20px;
+	}
+	.border1{
+		border-color: #000;
+		border-width: 5px;
+		border-style: solid;
+	}
+	.border2{
+		border: dotted 5px red;
+	}
+	.border3{
+		border-bottom: 5px solid #740507;
+		border-left: #AD0CD2 5px solid;
+		border-right: solid #0E8F35 5px;
+		border-top: 5px solid #787906;
+	}
+	.border4{
+		border:dashed 5px #000;
+	}
+	.bg{
+		background: #ACACAC;
+	}
+	.container{
+		width: 600px;
+		margin: 0 auto;
+	}
+</style>
+<body>
+	<div class="parent_border">
+		<div class="border border1"></div>
+		<div class="border border2"></div>
+		<div class="border border3"></div>
+		<div class="border border4"></div>
+	</div>
+	
+	<div class="bg">
+		<div class="container">
+			<h2>Heading lorem ipsum</h2>
+			<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+			<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+			<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+		</div>
+	</div>
+</body>
+</html>
