@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    max-width: 900px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+    border-bottom: solid 5px black;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+
+    font-family: 'pricedownregular';
+    font-size: 100px;
+    color: pink;
+    text-shadow: 1px 1px black;
+}
+
+a {
+    display: block;
+    padding: 20px;
+    background-color: beige;
+    text-decoration: none;
+    width: 150px;
+    text-align: center;
+    color: brown;
+    font-weight: bold;
+    border-radius: 0 0 0 50px;
+}
+
+a:hover {
+    background-color: brown;
+    color: beige;
+    border-bottom: black 3px solid;
+}
+
+p {
+    font-family: 'Roboto Slab', serif;
+    text-align: justify;
+    text-indent: 30px;
+}
