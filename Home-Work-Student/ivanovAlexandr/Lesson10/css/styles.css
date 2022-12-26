@@ -1,0 +1,45 @@
+.body{
+	margin: 0 0 0 0;
+}
+
+.wrapper{
+	background: url(../background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: auto;
+}
+
+.wrapper > h2 {
+	font-size: 40px;
+	font-family: 'open_sansbold';
+	text-align: center;
+	text-decoration: underline;
+	color: #fff;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: aqua;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+.wrapper > p, a {
+	font-size: 28px;
+	font-family: 'open_sansregular';
+	color: #fff;
+}
+
+.wrapper > p > img{
+	height: 100px;
+	padding-left: 20px;
+}
+
+.wrapper > a {
+	color: yellow;
+	text-decoration: none;
+}
+
+.wrapper > a:hover {
+	text-decoration: underline;
+	color:aqua;
+}

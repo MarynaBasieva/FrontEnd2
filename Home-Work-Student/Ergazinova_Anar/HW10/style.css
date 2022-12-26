@@ -1,0 +1,103 @@
+
+body {
+    background: url(wallpaper.jpg) no-repeat top center/cover;;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.box {
+        border-width:1;
+        border-color: rgb(190,190,190);
+        border-style: solid;
+}
+
+#Two {
+    font-family: 'Open Sans', 'Sevillana', sans-serif; 
+    color:rgb(208, 230, 217);
+    font-size: 50px;
+    font-weight: bolder;
+    background-color: rgba(250, 235, 215, 0.493);
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 2px 0 2px #000, 
+    0 2px 2px #000, 
+    -2px 0 2px #000, 
+    0 -2px 2px #000;
+}
+
+#third,    
+#fourth {
+    font-size: 25px;
+    background-color: rgba(240, 255, 255, 0.644);
+    font-weight: bold;
+    width: 100%;
+}
+
+.box2 {
+        border-width:1;
+        border-color: rgb(190,190,190);
+        border-style: solid;
+}
+
+#image1 {
+    border: 2px groove black;
+}
+
+#definition {
+    font-family: 'Open Sans', 'Sevillana', sans-serif;
+    text-align: left; 
+    color:rgb(208, 230, 217);
+    font-size: 30px;
+    background-color: rgba(240, 255, 255, 0.644);
+    font-weight: bold;
+    width: 100%;
+    text-shadow: 3px 0 3px #000, 
+    0 3px 3px #000, 
+    -3px 0 3px #000, 
+    0 -3px 3px #000;
+    padding-bottom: 20px;
+    text-indent: 20px;
+}
+
+#definition:hover {
+text-decoration: underline;
+}
+
+#fifth,
+#sixth {
+    font-size: 25px;
+    background-color: rgba(240, 255, 255, 0.644);
+    font-weight: bold;
+    width: 100%;
+}
+
+#image2 {
+    border: 2px groove black;
+}
+
+.box3 {
+    font-size: 15px;
+    background-color: rgba(240, 255, 255, 0.644);
+    font-weight: bold;
+    width: 100%;
+    text-decoration: none;
+}
+
+.box3:hover {
+    text-decoration: underline;
+    color:rgb(228, 41, 17) 
+}
+
+#a1,
+#a2 {
+    text-decoration: none; 
+}
+
+#a1:hover {
+    text-decoration: underline;
+    color:rgb(228, 41, 17); 
+}
+#a2:hover {
+    text-decoration: underline;
+    color:rgb(228, 41, 17); 
+}

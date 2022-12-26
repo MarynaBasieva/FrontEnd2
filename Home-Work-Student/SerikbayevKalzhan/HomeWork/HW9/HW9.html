@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background: url("img/Brooklyn3.jpg") no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+    h1 {
+            text-align: center;
+            margin: 10px 0 15px 0;
+        }
+    .form_1{
+        width: 50%;
+        background: rgb(0, 0, 0, 0.5);
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        color:aliceblue;
+    }
+    .form_2{
+        width: 50%;
+        background: #c2dcff;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        color: black;
+    }
+    .form_2 h2{
+        text-align: center;
+    }
+    .form_2 input,
+    .form_2 textarea{
+        width: 100%;
+    }
+</style>
+<body>
+    <h1>Your dream country</h1>
+    <div>
+        <div class="form_1">
+            <fieldset>
+                <legend>
+                    <h2>Welcome to New-York</h2>
+                </legend>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae impedit, voluptas officia aut quaerat modi corporis, sequi voluptatum quis quae illum dolore illo numquam maiores amet tenetur maxime earum tempora.</p>
+            </fieldset>
+        </div>
+        <div class="form_2">
+            <form action="">
+                <fieldset>
+                    <legend>
+                        <h2>Форма заполнения</h2>
+                    </legend>
+                    <p>
+                        <label for="name">Name</label>
+                        <input id="name" type="text" placeholder="Input your name" required />
+                    </p>
+                    <p>
+                        <label for="number">Phone Number</label>
+                        <input id="number" type="number" placeholder="+7(700) 000-00-00" required />
+                    </p>
+                    <p>
+                        <label for="message">Comment</label>
+                        <textarea id="message" rows="10" placeholder="Here your text..."></textarea>
+                    </p>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

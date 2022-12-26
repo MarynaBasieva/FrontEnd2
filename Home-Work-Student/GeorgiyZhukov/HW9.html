@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CSS-Course</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background: url("img/css.jpg") no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+    h1 {
+            text-align: center;
+            margin: 10px 0 15px 0;
+        }
+    .form_1{
+        width: 50%;
+        background: rgb(0, 0, 0, 0.5);
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        color:rgb(68, 26, 255);
+    }
+    .form_2{
+        width: 50%;
+        background: #c2dcff;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        color: rgb(255, 50, 50);
+    }
+    .form_2 h2{
+        text-align: center;
+    }
+    .form_2 input,
+    .form_2 textarea{
+        width: 100%;
+    }
+</style>
+<body>
+    <h1>Best course for you</h1>
+    <div>
+        <div class="form_1">
+                    <h2>Welcome to CSS course</h2>
+                
+                <p>In this course you will be able to study HTML and CSS</p>
+        </div>
+        <div class="form_2">
+            <form action="">
+                <fieldset>
+                        <h2>Form</h2>
+                    <p>
+                        <label for="number">Phone Number</label>
+                        <input id="number" type="number" placeholder="+7(771) 128-02-40" required />
+                    </p>
+                    <p>
+                        <label for="message">Comment</label>
+                        <textarea id="message" rows="10" placeholder="Your text"></textarea>
+                    </p>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
