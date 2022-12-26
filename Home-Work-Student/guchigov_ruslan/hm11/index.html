@@ -55,6 +55,7 @@
       display: block;
       position: relative;
       margin: 0 auto;
+      box-sizing: border-box;
       width: 100px;
       height: 50px;
       font-weight: bold;
@@ -64,6 +65,7 @@
       text-decoration: none;
       text-transform: uppercase;
       border: 1px solid #000000;
+      box-shadow: 0 2px 4px #000000;
     }
 
     .home .btn::after {
@@ -79,8 +81,11 @@
     }
 
     .home .btn:hover {
+      font-size: 15px;
       transition: all 0.2s ease;
-      border: 3px solid #000000;
+      border: 2px solid #000000;
+      box-shadow: 0 0 1px #000000;
+      background-color: #e4e4e4;
     }
   </style>
 </head>
