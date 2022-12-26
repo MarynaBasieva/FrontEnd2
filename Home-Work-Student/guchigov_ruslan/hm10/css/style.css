@@ -1,0 +1,63 @@
+@font-face {
+	font-family: 'comic';
+	src: url('../fonts/comic.eot');
+	src: local('☺'), url('../fonts/comic.woff') format('woff'), url('../fonts/comic.ttf') format('truetype'), url('../fonts/comic.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  font-family: "comic", "Arial", sans-serif;
+}
+
+body {
+  background-color: #000000d0;
+  color: #ffffff;
+}
+
+.wrap {
+  margin: 0 auto;
+  width: 50%;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+h2 {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #5f5b5b;
+  border-bottom: 10px solid rgb(255, 0, 0);
+  text-align: center;
+}
+
+ul {
+  margin: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  display: inline-block;
+  margin: 1px;
+  padding: 0 5px;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: #ffffff;
+  background-color: #000000;
+  text-decoration: underline;
+}
+
+li a:active {
+  color: #ff0000;
+  background-color: #ffffff;
+  text-decoration: underline;
+}

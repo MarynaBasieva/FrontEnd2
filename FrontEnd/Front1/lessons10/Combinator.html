@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Combinator</title>
+</head>
+	
+<style>
+	div p{
+		/* background: #ccc;  /*Стиль задаеться всем р каторые находяться в div*/
+	}
+	div > p{
+		/*background: #ccc; /*Стиль задаеться всем р если родитель div больше на ранг*/
+	}
+	div+p+p+p{
+		/* background: #ccc;/*Стиль задаеться всем р от первого div*/
+	}
+	div ~ p{
+	background: #ccc;	/*Сравнивает селекторы которые не являються div ~ p и не их родители*/
+	}
+	
+</style>
+	
+<body>
+	<div>
+		<h2>Lorem ipsum dolar</h2>
+	</div>
+	
+	<p>color</p>
+	<p>color</p>
+	<p>color</p>
+	
+	<div>
+		<p>color</p>
+		<p>color</p>
+		<p>color</p>
+	</div>
+</body>
+</html>
