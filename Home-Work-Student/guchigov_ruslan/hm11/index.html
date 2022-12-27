@@ -20,8 +20,8 @@
     .border .head {
       padding-bottom: 10px;
       border-bottom: 3px solid #000000;
-
     }
+
 
     .border .head::after {
       content: "";
@@ -51,7 +51,19 @@
       background: blue;
     }
 
-    .home .btn {
+    .photoshop .lines::before {
+      width: 70%;
+    }
+
+    .css .lines::before {
+      width: 85%;
+    }
+
+    .html .lines::before {
+      width: 55%;
+    }
+
+    .btn {
       display: block;
       position: relative;
       margin: 0 auto;
@@ -65,10 +77,10 @@
       text-decoration: none;
       text-transform: uppercase;
       border: 1px solid #000000;
-      box-shadow: 0 2px 4px #000000;
+      box-shadow: 1px 2px 2px #000000;
     }
 
-    .home .btn::after {
+    .btn::after {
       display: block;
       position: absolute;
       z-index: 1;
@@ -76,16 +88,21 @@
       left: 0;
       right: 0;
       bottom: 0;
-      color: #000000;
       content: 'Click me';
+      color: #000000;
+
     }
 
-    .home .btn:hover {
-      font-size: 15px;
+    .btn:hover::after {
+      content: 'You sure?';
       transition: all 0.2s ease;
-      border: 2px solid #000000;
-      box-shadow: 0 0 1px #000000;
-      background-color: #e4e4e4;
+      color: #ffffff;
+      background-color: #000000;
+    }
+
+    .btn:active:after {
+      content: 'You Lose';
+      color: #ff0000;
     }
   </style>
 </head>
@@ -110,17 +127,17 @@
     <div class="skills">
       <h2>Lab</h2>
       <h3>My skills</h3>
-      <div class="photoshop">
+      <div class="photoshop" title="70%">
         <h4>Adobe Photoshop</h4>
         <div class="lines">
         </div>
       </div>
-      <div class="html">
+      <div class="html" title="55%">
         <h4>HTML5</h4>
         <div class="lines">
         </div>
       </div>
-      <div class="css">
+      <div class="css" title="85%">
         <h4>CSS3</h4>
         <div class="lines">
         </div>
@@ -128,7 +145,7 @@
     </div>
     <div class="home">
       <h2 class="head">Home work</h2>
-      <a href="#" class="btn">Read me</a>
+      <a href="#!" class="btn">Read me</a>
     </div>
   </div>
 </body>
