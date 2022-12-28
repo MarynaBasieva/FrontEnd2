@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Button</title>
+</head>
+<style>
+	.btn{
+		text-decoration: none;
+	}
+	.btn::before {
+	content: "Hello";
+	}
+
+
+	.btn:hover::before{
+		content: "Thank tou";
+		color: blue;
+	}
+
+</style>
+<body>
+	<a href="#" class="btn">Read me</a>
+</body>
+</html>
