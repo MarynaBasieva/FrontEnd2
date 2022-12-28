@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>z-index</title>
+</head>
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	.container{
+		position: relative;
+		max-width: 1170px;
+		margin: 0 auto;
+	}
+	.box{
+		width: 200px;
+		height: 200px;
+		text-align: center;
+		font-size: 60px;
+		color: #333;
+	}
+	.box1{
+		background: rgb(94,193,231,0.7);
+		position: absolute;
+		left: 0;
+		z-index: 3;
+	}
+	.box2{
+		background: rgba(4,116,183,0.7);
+		position: absolute;
+		left: 20px;
+		top: 20px;
+		z-index: 2;
+	}
+	.box3{
+		background: rgba(214,73,218,0.7);
+		position: absolute;
+		left: 40px;
+		top: 40px;
+		z-index: 1;
+	}
+</style>
+<body>
+	<section class="index">
+		<div class="container">
+			<div class="box1 box">1</div>
+			<div class="box2 box">2</div>
+			<div class="box3 box">3</div>
+		</div>
+	</section>
+</body>
+</html>
