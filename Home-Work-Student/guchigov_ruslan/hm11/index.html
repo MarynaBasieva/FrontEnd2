@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hw11</title>
+  <style>
+    .wrap {
+      margin: 50px auto;
+      width: 800px;
+    }
+
+    .border {
+      text-align: justify;
+      position: relative;
+    }
+
+    .border .head {
+      padding-bottom: 10px;
+      border-bottom: 3px solid #000000;
+    }
+
+
+    .border .head::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 14px;
+      background-color: #000000;
+      border-radius: 10%;
+      position: relative;
+      top: 18px;
+    }
+
+    .skills {
+      width: 50%;
+    }
+
+    .lines {
+      height: 4px;
+      background: silver;
+    }
+
+    .lines::before {
+      content: "";
+      display: block;
+      width: 80%;
+      height: 100%;
+      background: blue;
+    }
+
+    .photoshop .lines::before {
+      width: 70%;
+    }
+
+    .css .lines::before {
+      width: 85%;
+    }
+
+    .html .lines::before {
+      width: 55%;
+    }
+
+    .btn {
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      box-sizing: border-box;
+      width: 100px;
+      height: 50px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 50px;
+      color: transparent;
+      text-decoration: none;
+      text-transform: uppercase;
+      border: 1px solid #000000;
+      box-shadow: 1px 2px 2px #000000;
+    }
+
+    .btn::after {
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: 'Click me';
+      color: #000000;
+
+    }
+
+    .btn:hover::after {
+      content: 'You sure?';
+      transition: all 0.2s ease;
+      color: #ffffff;
+      background-color: #000000;
+    }
+
+    .btn:active:after {
+      content: 'You Lose';
+      color: #ff0000;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="border">
+      <h2 class="head">Class Work</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur delectus quam minima eos, deserunt
+        voluptas nam? Accusamus delectus sed nemo autem eaque, harum maiores veniam, iusto voluptates dolorum corporis,
+        officia magni. Blanditiis, iusto! Debitis mollitia veniam cumque enim, et aperiam. Lorem, ipsum dolor sit amet
+        consectetur adipisicing elit. Dolorem suscipit labore a, cupiditate quaerat iusto neque assumenda voluptate
+        doloremque consectetur impedit, magni iste. Velit ipsa dolorum nihil. Unde architecto maxime sequi accusantium
+        dolores, laborum obcaecati! Repellat vero modi doloribus enim harum asperiores quas quisquam, porro et, expedita
+        facere ad obcaecati nisi fugit sint nihil. Dolorem id necessitatibus sapiente aliquid quidem iure et tenetur
+        voluptatum nesciunt, eius ullam perspiciatis! Accusamus alias reprehenderit soluta ducimus facilis at et libero
+        dolores dignissimos? Voluptates molestiae saepe, voluptatibus hic sunt eum quasi, animi similique quos, quo
+        commodi explicabo voluptas! Sint inventore ea cum odio fugiat!
+      </p>
+    </div>
+    <div class="skills">
+      <h2>Lab</h2>
+      <h3>My skills</h3>
+      <div class="photoshop" title="70%">
+        <h4>Adobe Photoshop</h4>
+        <div class="lines">
+        </div>
+      </div>
+      <div class="html" title="55%">
+        <h4>HTML5</h4>
+        <div class="lines">
+        </div>
+      </div>
+      <div class="css" title="85%">
+        <h4>CSS3</h4>
+        <div class="lines">
+        </div>
+      </div>
+    </div>
+    <div class="home">
+      <h2 class="head">Home work</h2>
+      <a href="#!" class="btn">Read me</a>
+    </div>
+  </div>
+</body>
+
+</html>

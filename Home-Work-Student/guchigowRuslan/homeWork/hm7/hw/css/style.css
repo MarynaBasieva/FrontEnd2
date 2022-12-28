@@ -1,0 +1,68 @@
+body {
+background-color: antiquewhite;
+}
+.wraper {
+    margin: 5px 10%;
+    padding: 5px;
+    background-color: white;
+    border-left: 1px solid rgb(122, 122, 243);
+}
+p {
+    padding-left: 10px;
+}
+.logo{
+    float: right;
+    margin: 0.5em 0 1.3em 1.4em;
+    border: 1px solid black;
+}
+.logo-name {
+    margin: 1px 5px;
+    padding: 5px;
+    border: 1px solid gray;
+}
+h1, h2, h3 {
+    font-weight: normal;
+    border-bottom: 1px solid #a2a9b1;
+}
+.contents {
+    border: 1px solid black;
+    display: table;
+    padding: 7px;
+    padding-right: 50px;
+}
+
+.player{
+    float: right;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+}
+ul{
+    padding-left: 10px;
+    list-style-type: disc;
+}
+a{
+    text-decoration: none;
+}
+.h404{
+    color: tomato;
+    font-size: 80px;
+    text-align: center;
+}
+.d404{
+    text-align: center;
+}
+.d404 img{
+    border: 1px solid black;
+    margin: 10px;
+}
+.revert{
+    font-size: 50px;
+}
+.on404{
+    text-align: center;
+}
+.on404 a{
+    font-size: 30px;
+    color: red;
+}
