@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>psevdo-element</title>
+</head>
+<style>
+	.link{
+		display: block;
+	}
+	a:link{
+		text-decoration: none;
+		color: #333;
+	}
+	/*a:visited{
+		color: yellow;
+	}*/
+	a:hover{
+		text-decoration: underline;
+	}
+	a:active{
+		color: #00795C;
+	}
+	a:focus{
+		color: brown;
+	}
+	/*form style*/
+	.form{
+		width: 600px;
+		margin: 0 auto;
+	}
+	.form input{
+		outline: none;
+		display: block;
+		border: solid #000 1px;
+		padding: 5px 7px;
+		width: 100%;
+		margin-bottom: 20px;
+		height: 30px;
+		font-size: 15px;
+		color: #000;
+	}
+	.form textarea{
+		outline: none;
+		display: block;
+		border: solid #000 1px;
+		padding: 5px 7px;
+		width: 100%;
+		margin-bottom: 20px;
+		height: 150px;
+		font-size: 15px;
+		color: #000;
+		resize: none;
+	}
+	.form textarea::placeholder,
+	.form input::placeholder{
+		color: #000;
+	}
+	.form textarea:focus,
+	.form input:focus{
+		border:solid 1px #ccc;
+		transition: all 0.3s ease;
+	}
+	.form textarea:focus::placeholder,
+	.form input:focus::placeholder{
+		color: #ccc;
+	}
+	.form button{
+		cursor: pointer;
+		display: block;
+		width: 150px;
+		font-size: 17px;
+		height: 40px;
+		text-align: center;
+		border: none;
+		background: #000;
+		color: #fff;
+		transition: all 0.3s ease;
+	}
+	.form button:hover{
+		background: #110091;
+	}
+</style>
+<body>
+	<a href="#" class="link">Link 1</a>
+	<a href="#" class="link">Link 2</a>
+	<a href="#" class="link">Link 3</a>
+	<a href="#" class="link">Link 4</a>
+	<a href="#" class="link">Link 5</a>
+	
+	
+	<form class="form">
+		<input type="text" placeholder="Name" />
+		<input type="tel" placeholder="Phone" />
+		<input type="email" placeholder="E-mail" />
+		<textarea placeholder="Message"></textarea>
+		<button>Send</button>
+	</form>
+</body>
+</html>

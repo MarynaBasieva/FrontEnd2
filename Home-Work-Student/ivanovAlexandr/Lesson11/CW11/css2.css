@@ -1,0 +1,28 @@
+.container {
+	background: rgb(219, 217, 217);
+	padding: 30px;
+	max-width: 1000px;
+	width: auto;
+}
+
+.string {
+	position: relative;
+	margin: 20px 0;
+	height: 5px;
+	background-color: black;
+}
+
+.string:after {
+	content: '';
+	width: 50px;
+	background-color: black;
+	height: 20px;
+	text-decoration: none;
+	position: absolute;
+	left: 0;
+	top: -8px;
+}
+
+p {
+	margin-bottom: 15px;
+}
