@@ -6,7 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>hw</title>
+  <script src="jquery-3.6.3.min.js"></script>
+  <script src="custom.js"></script>
   <style>
+    .wrapper {
+      max-width: 1220px;
+      margin: 0 auto;
+    }
+
     .home1 img {
       display: block;
       width: 300px;
@@ -25,10 +32,14 @@
       clear: both;
     }
 
-    .image-background {
+    .home2 {
+      height: 600px;
+    }
+
+    .home2 .image-background {
       margin: 0 auto;
       width: 800px;
-      height: 500px;
+      height: 100%;
       background: #000000 url('./4.webp') no-repeat center;
     }
 
@@ -43,7 +54,112 @@
       font-size: 19px;
       color: #ffffff;
       text-shadow: 0 2px 2px #000000;
-      background-color: rgba(14, 14, 14, 0.679);
+      background-color: rgba(255, 4, 4, 0.5);
+    }
+
+    .home3 {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.624);
+    }
+
+    .input {
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+      height: 60%;
+      font-size: 20px;
+      padding: 2px;
+      margin-bottom: 10px;
+      resize: none;
+      border: 1px solid #0000ff;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #000000;
+    }
+
+    .modal-wrap {
+      box-sizing: border-box;
+      overflow: hidden;
+      position: relative;
+      width: 400px;
+      height: 500px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #ffffff;
+    }
+
+    .form {
+      padding-top: 10px;
+    }
+
+    .form h2 {
+      text-align: center;
+      color: #0000ff;
+    }
+
+    .input:focus-visible {
+      outline: none;
+      border: 1px solid rgb(0, 0, 255);
+      box-shadow: 0 0 15px #3808f8;
+    }
+
+    .input:focus-visible::placeholder {
+      color: rgba(0, 0, 0, 0.098);
+    }
+
+    .modal-btn {
+      background-color: #000000;
+      height: 60px;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    .closed {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 5px;
+      width: 35px;
+      height: 30px;
+      text-align: center;
+      line-height: 25px;
+      font-size: 25px;
+      padding: 2px;
+      border: 1px solid rgb(0, 0, 255);
+      cursor: pointer;
+    }
+
+    .modal-btn:hover,
+    .modal-btn:focus {
+      color: #000000;
+      background-color: #ffffff;
+      box-shadow: 0 0 15px #3808f8;
+    }
+
+    .call-us {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 200px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      color: #ffffff;
+      background-color: #0000ff;
+      border-radius: 20px;
+      margin: 20px;
+      opacity: 0.5;
+    }
+
+    .call-us:hover {
+      opacity: 1;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -126,11 +242,34 @@
       </p>
       <div class="clear"></div>
     </div>
-    <div class="image-background">
+
+    <div class="home2">
+      <div class="image-background">
+      </div>
+      <div class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, culpa inventore quisquam deleniti alias labore
+        fuga dolor quas consectetur ipsa explicabo ducimus, adipisci debitis, illum quam provident harum velit libero!
+      </div>
     </div>
-    <div class="text">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, culpa inventore quisquam deleniti alias labore
-      fuga dolor quas consectetur ipsa explicabo ducimus, adipisci debitis, illum quam provident harum velit libero!
+    <div class="call-us">
+      Перезвоните нам!
+    </div>
+    <div class="home3">
+      <div class="modal-wrap">
+        <button class="closed modal-btn">x</button>
+        <div class="form-wrap">
+          <form class="form" method="get">
+            <h2> Form Name</h2>
+            <input class="input" type="text" name="name" placeholder="Name" minlength="3" maxlength="30" required>
+            <input class="input" type="password" name="pass" placeholder="Password" minlength="8" maxlength="30"
+              required>
+            <input class="input" type="tel" name="tel" placeholder="Phone" minlength="7" maxlength="30" required>
+            <input class="input" type="email" name="email" placeholder="Email" minlength="5" maxlength="25" required>
+            <textarea class="input" name="textarea" cols="30" rows="5" placeholder="Message" maxlength="130"></textarea>
+            <button class="input modal-btn">Send</button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 
