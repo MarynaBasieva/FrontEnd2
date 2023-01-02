@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        margin: 0 auto;
+        width: 800;
+    }
+    .parent{
+        width: 50%;
+    }
+    .parent h3{
+        color: #404040;
+    }
+    .lines{
+        height: 4px;
+        background: #808080;
+        position: relative;
+    }
+    .lines::before{
+        content: "";
+        display: block;
+        width: 80%;
+        height: 100%;
+        background: #003366;
+        position: absolute;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="parent">
+            <h1>Мои навыки</h1>
+            <div class="photoshop">
+                <h3>Adobe Photoshop</h3>
+                <div class="lines"></div>
+            </div>
+            <div class="corel">
+                <h3>CorelDraw</h3>
+                <div class="lines"></div>
+            </div>
+            <div class="figma">
+                <h3>Figma</h3>
+                <div class="lines"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
