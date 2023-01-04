@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    section {
+        max-width: 900px;
+        margin: 30px auto;
+    }
+
+    .image-box {
+        position: relative;
+    }
+
+    img {
+        max-width: 100%;
+        width: auto;
+    }
+
+    .text {
+        width: 100%;
+        text-align: center;
+        background-color: rgb(0, 0, 0, 0.5);
+        height: 40px;
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+        text-shadow: 1px 1px black;
+        padding: 20px 0;
+        position: absolute;
+        bottom: 3px;
+        right: 0;
+        transition: all 0.5s ease;
+    }
+
+    .text:hover {
+        background-color: rgb(0, 0, 0, 0.4);
+        text-shadow: 1px 1px red;
+        cursor: pointer;
+    }
+
+    .text:active {
+        text-shadow: 1px 1px rgb(255, 252, 255);
+        color: rgb(0, 0, 0);
+    } 
+
+    .modal-window .form h3 {
+        text-align: center;
+    }
+
+    .modal-window {
+        display: none;
+
+        width: 300px;
+        background-color: blanchedalmond;
+        padding: 10px;
+        box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .modal-close {
+        position: absolute;
+        right: 17px;
+        bottom: 15px;
+        background: rgb(182, 67, 67);
+        color: white;
+        padding: 2px 5px 4px 5px;
+        border-radius: 100%;
+    }
+
+    button {
+        background: rgb(182, 67, 67);
+        padding: 7px;
+        border-radius: 20px;
+        border: none;
+        color: white;
+        width: 65%;
+        margin: 0 auto;
+        display: block;
+    }
+
+    button:hover,
+    .modal-close:hover {
+        background: white;
+        color: rgb(182, 67, 67);
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 1px 1px 2px 1px grey;
+    }
+
+    button:active,
+    .modal-close:active {
+        background: beige;
+    }
+
+
+    textarea,
+    input {
+        display: block;
+        justify-content: center;
+        width: 80%;
+        margin: 10px auto;
+        resize: none;
+        padding: 3px;
+    }
+
+    textarea:focus,
+    input:focus {
+        border: 2px solid rgb(182, 67, 67);
+        outline: none;
+        background: rgb(231, 230, 230);
+    }
+</style>
+
+<body>
+    <section>
+        <div class="image-box">
+
+            <img src="https://assets.vogue.com/photos/589134b57edfa70512d62da0/16:9/w_1280,c_limit/how-to-watch-star-wars.jpg"
+                alt="Star Wars">
+
+            <div class="modal-window">
+                <div type="button" class="modal-close" title="Покинуть шлюз">x</div>
+                <div class="form">
+                    <form action="javascript:alert('Сильная турбулентность, отложить полет')">
+                        <h3>Введите ваше имя пилот</h3>
+                        <input type="text" placeholder="Name" required>
+                        <input type="text" placeholder="Pilot ID" required>
+                        <input type="text" placeholder="Rank" required>
+                        <input type="password" placeholder="Password" required>
+                        <textarea name="" id="" cols="30" rows="5" placeholder="Additional info"></textarea>
+                        <button type="submit" href="#" title="Прокатимся с огоньком">Запустить звездолет</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="btn_baner text" type="button" title="Функция доступна">
+                Сесть в звездолет
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</body>
+
+</html>
