@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork12-1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .parent_modal {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: rgb(0,0,0,0.7);
+            top: 0;
+            left: 0;
+
+        }
+
+        .wrap_modal {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 500px;
+            height: 450px;
+            transform: translate(-50%,-50%);
+            background: rgba(145, 33, 209, 0.493);
+            padding: 20px;
+        }
+
+        .form {
+           display: block;
+        }
+
+        .form_modal h2 {
+            font-family: fantasy;
+            color: rgb(166, 197, 197);
+            text-shadow: 5px 0 5px #000, 
+            0 5px 5px #000, 
+           -5px 0 5px #000, 
+            0 -5px 5px #000;
+            margin-bottom: 10px;
+            padding-left: 140px;
+        }
+
+        .form_modal .input {
+            font-family: fantasy;
+            width: 100%;
+            height: 20px;
+            outline: none;
+            border: 15px rgb(119, 31, 177);
+            font-size: 15px;
+            display: block;
+            margin-bottom: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+ 
+        }
+
+        .form .input::placeholder {
+            color:rgba(36, 33, 34, 0.664);
+        }
+
+        .form .input:focus::placeholder {
+            color:rgba(255, 20, 145, 0.664);
+        }
+
+        .form .input:focus {
+            border:rgba(255, 20, 145, 0.664) solid 5px;
+        }
+
+        .textarea {
+            font-family: fantasy;
+            width: 100%;
+            height: 150px;
+            outline: none;
+            border: 15px rgb(8, 8, 8);
+            font-size: 15px;
+            display: block;
+            margin-bottom: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .form .textarea::placeholder {
+            color:rgba(36, 33, 34, 0.664);
+        }
+
+        .form .textarea:focus::placeholder {
+            color:rgba(255, 20, 145, 0.664);
+        }
+
+        .form .textarea:focus {
+            border:rgba(255, 20, 145, 0.664) solid 5px;
+        }
+
+        .form .btn {
+            font-family: fantasy;
+            font-size: 20px;
+            outline: none;
+            border: none;
+            width:200px;
+            height:40px;
+            text-align: center;
+            padding: 10px 0;
+            background: rgba(98, 16, 114, 0.856);
+            color:rgba(234, 231, 238, 0.788);
+            cursor: pointer;
+        }
+
+        .form .btn:hover {
+            background: rgb(37, 36, 36);
+
+        }
+
+        .closed {
+            position: absolute;
+            right: 15px;
+            top: 5px;
+            color:rgba(217, 213, 221, 0.692);
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .closed:hover {
+            color:rgba(255, 20, 145, 0.664);
+        }
+
+    </style>
+</head>
+<body>
+    <section class="banner">
+        <img src="1.jpg" alt="wallpaper"/>
+    </section>
+    <div class="parent_modal">
+        <div class="wrap_modal">
+            <div class="closed">×</div>
+            <div class="form_modal">
+                <h2>Please, fill out the form:</h2>
+                <form class="form">
+                    <input type="text" class="input" placeholder="First Name" />
+                    <input type="text" class="input" placeholder="Last Name" />
+                    <input type="text" class="input" placeholder="Your Phone" />
+                    <input type="text" class="input" placeholder="Your E-mail" />
+                    <textarea class="textarea" placeholder="Your Message"></textarea>
+                    <button class="btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
