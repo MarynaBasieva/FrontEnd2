@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 1000px;
+  background: url("../img/wall.jpg") no-repeat top center / cover;
+  background-attachment: fixed;
+}
+
+body > div {
+  width: 50%;
+  margin: 3%;
+  background-color: #2a0adf5d;
+}
+
+h1 {
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgba(161, 4, 4, 0.589);
+}
+
+.block1 p {
+  padding: 50px;
+  font-weight: 600;
+  color: #000000;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.block2 p {
+  font-size: 20px;
+  color: rgb(0, 0, 0);;
+}
+
+legend {
+  text-align: center;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+fieldset {
+  margin: 0 auto;
+  width: 200px;
+}

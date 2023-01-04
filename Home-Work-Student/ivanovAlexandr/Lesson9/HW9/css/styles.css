@@ -1,0 +1,75 @@
+.body{
+	margin: 0 0 0 0;
+}
+
+.wrapper{
+	background: url(../data/background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	height: 2080px;;
+	margin-bottom: 10px;
+	position: fixed;
+}
+
+.container{
+	width: 50%;
+	margin: 20px 20px;
+	padding: 10px 20px 10px 20px;
+	background-color: orangered;
+	position: relative;
+}
+
+.div1>h2{
+	margin: 0;
+	text-align: center;
+	font-size: 50px;
+	font-weight: 600;
+	color: antiquewhite;
+}
+
+.div1>p{
+	font-size: 22px;
+	color: #000;
+
+}
+
+.form-group label {
+	display: block;
+	font-size: 22px;
+	color: black;
+	font-weight: 600;
+	text-align: left;
+	margin: 10px 0px 5px 0px;
+}
+
+.form-group input,
+.form-group textarea {
+	width: 100%;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	color: black;
+	padding: 15px 0 10px;
+	outline: none;
+	font-size: 20px;
+	font-family: inherit;
+	padding-left: 10px;
+}
+
+.btn {
+	background: #340233;
+	color: white;
+	padding: 15px 20px;
+	margin-top: 10px;
+	font-size: 22px;
+	font-family: inherit;
+	font-weight: 600;
+	border: none;
+	cursor: pointer;
+}
+
+.btn:hover {
+	opacity: 0.8;
+}

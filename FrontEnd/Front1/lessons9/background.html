@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>background</title>
+</head>
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	.box{
+		margin-bottom: 50px;
+		padding: 200px 0;
+	}
+	.box h2{
+		text-align: center;
+		font-size: 40px;
+		color: #fff;
+	}
+	.background_color{
+		background-color: #0400D6;
+	}
+	.background_image{
+		background-image: url("img/css.png");
+		background-repeat: no-repeat;
+	}
+	.background_image2{
+		background: url("img/css.png") no-repeat;
+		
+	}
+	.background_repeat{
+		background: url("img/css-small.jpg") repeat;
+	}
+	.background_position_repeat{
+		/*background: url("img/css-small.jpg") no-repeat;*/
+		background: url("img/css.png") no-repeat;
+		background-position: center bottom;
+	}
+	.background_cover{
+		background: url("img/css-small.jpg") no-repeat;
+		background-size: cover;
+	}
+	.background_contain{
+		background: url("img/css.png") no-repeat;
+		background-position: center bottom;
+		background-size: contain;
+	}
+	.background_full{
+		background: #000 url("img/css-small.jpg") no-repeat top center / contain;
+	}
+	.background_attachment{
+		background: url("img/css.png") no-repeat top center / cover;
+		background-attachment: fixed;
+	}
+	.background_full_position{
+		background: url("img/start.webp"),  url("img/start.webp"), url("img/star2.png");
+		background-repeat: no-repeat;
+		background-size: 40%, 40%, 10%;
+		background-position: left, right, center;
+	}
+	.background_full_position h2{
+		color:#000;
+	}
+</style>
+<body>
+	<section class="parentBackground">
+			<div class="background_color box">
+				<h2>background color</h2>
+			</div>
+			
+			<div class="background_image box">
+				<h2>background image</h2>
+			</div>
+		
+		   <div class="background_image2 box">
+				<h2>background image 2</h2>
+			</div>
+			
+			<div class="background_repeat box">
+				<h2>background repeat</h2>
+			</div>
+			
+			<div class="background_position_repeat box">
+				<h2>background position repeat</h2>
+			</div>
+			
+			<div class="background_cover box">
+				<h2>background image cover</h2>
+			</div>
+			
+			<div class="background_contain box bg_contain">
+				<h2>background image contain</h2>
+			</div> 
+			<div class="background_attachment box">
+				<h2>background image attachment</h2>
+			</div> 
+			<div class="background_full box">
+				<h2>background image full</h2>
+			</div> 
+		
+			<div class="background_full_position box">
+				<h2>background image full position</h2>
+			</div> 
+			
+			
+	</section>
+</body>
+</html>
