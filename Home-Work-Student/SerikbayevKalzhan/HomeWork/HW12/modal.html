@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    img{
+        max-width: 100%;
+        width: auto;
+    }
+    .parent_modal{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgb(0,0,0,0.7);
+        top: 0;
+        left: 0;
+    }
+    .wrap_modal{
+        position: absolute;
+        top: 5%;
+        left: 35%;
+        width: 350px;
+        height: 450px;
+        transform translate(-50%, -50%);
+        background: #fff;
+        padding: 15px 20px;
+    }
+    .form_modal h2{
+        text-align:center;
+        margin-bottom: 15px;
+        font-size:20px;
+    }
+    .form{
+        display:block;
+        width:330px;
+    }
+    .form input{
+        width: 100%;
+        height:25px;
+        outline:none;
+        border:#000 1px solid;
+        font-size: 15px;
+        display: block;
+        margin-bottom: 15px;
+        padding: 5px 10px;
+    }
+    .form textarea::placeholder,
+    .form input::placeholder{
+        color: #000;
+    }
+    .form textarea:focus::placeholder,
+    .form input:focus::placeholder{
+        color: #ccc;
+    }
+    .form textarea:focus,
+    .form input:focus{
+        border:#ccc 1px solid;
+    }
+    .textarea{
+        width: 100%;
+        height:120px;
+        outline:none;
+        border:#000 1px solid;
+        font-size: 15px;
+        display: block;
+        margin-bottom: 15px;
+        padding: 5px 10px;
+    }
+    .form .btn{
+        outline:none;
+        border:none;
+        width:100%;
+        height: 40px;
+        padding: 10px 0;
+        background: #333;
+        color:#fff;
+        cursor: pointer;
+        margin: 0 0 0 12px; 
+    }
+    .form .btn:hover{
+    background: blue;
+    }
+    .closed{
+        position: absolute;
+        right: 10px;
+        top:10px;
+        color: #000;
+        font-size: 30px;
+        cursor:pointer;
+        background: palevioletred;
+        padding: 0 20px;
+    }
+    .closed:hover{
+        background: red;
+    }
+</style>
+<body>
+    <section class="banners">
+        <img src="img/front1.jpeg" alt="developer" />
+        <img src="img/front1.jpeg" alt="developer" />
+    </section>
+    <div class="parent_modal">
+        <div class="wrap_modal">
+            <div class="closed">X</div>
+            <div class="form_modal">
+                <h2>Heading Form</h2>
+                <form class="form">
+                    <input type="text" class="input" placeholder="First name" />
+                    <input type="text" class="input" placeholder="Last name" />
+                    <input type="tel" class="input" placeholder="Your phone" />
+                    <input type="email" class="input" placeholder="Your E-mail" />
+                    <textarea class="textarea" placeholder="Your message"></textarea>
+                    <button class="btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

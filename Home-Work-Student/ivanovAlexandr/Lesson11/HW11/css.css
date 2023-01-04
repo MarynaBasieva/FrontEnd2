@@ -1,0 +1,64 @@
+p {
+	font-size: 15px;
+	margin: 0 0 5px 0;
+}
+
+.bars{
+	height: 10px;
+	position: relative;
+	max-width: 350px;
+	background: gray;
+	border-radius: 25px;
+	box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.4); /* тень, типа вдавливание */
+	margin-bottom: 20px;
+}
+
+.bar-inner::before{
+	position: absolute;
+	content: "";
+	display: block;
+	background: yellow;
+	border-radius: 25px;
+	height: 10px;
+  box-shadow: 
+    inset 0 2px 9px  rgba(255,255,255,0.3),
+	  inset 0 -2px 6px rgba(0,0,0,0.4);
+}
+
+.bar-one::before{
+	width: 77%;
+}
+
+.bar-two::before{
+	width: 43%;
+	background: yellowgreen;
+}
+
+.bar-three::before{
+	width: 28%;
+	background: aquamarine;
+}
+
+a{
+	visibility: hidden;
+}
+
+a::after{
+	content: 'Button';
+	position: absolute;
+	display: block;
+	visibility: visible;
+	font: bold 15px;
+	border: 1px solid gray;
+  background: #4CAF50;
+  color: white;
+	text-align: center;
+  padding: 6px 10px 6px 10px;
+	border-radius: 4px;
+	font-weight: 600;
+}
+
+a:hover{
+	opacity: 75%;
+}
+

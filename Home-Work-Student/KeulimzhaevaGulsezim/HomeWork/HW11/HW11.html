@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW11</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .abc{
+            width: 500px;
+		    height: 300px;
+		    background: rgb(252, 248, 248);
+            margin: 0 auto;
+            padding: 10px 30px;
+        }
+        h1{
+            padding: 20px 0;
+        }
+
+        h2{
+            padding: 20px 0;
+            font: 1em sans-serif;
+        }
+
+        .box{
+            position: relative;
+        }
+
+        .box1{
+            height: 5px; 
+            background: rgb(125, 124, 124);
+        }
+
+        .box1::before{
+            content: "";
+            display: block;
+            width: 80%;
+            height: 5px;
+            background: blue;
+        }
+
+      
+        
+        
+    </style>
+</head>
+
+<body>
+    <div class="abc">
+        <h1>Мои навыки</h1>
+
+        <div class="box">
+            <h2>Adobe Photoshop</h2>
+            <div class="box1"></div>
+        </div>
+
+        <div class="box">
+            <h2>Adobe Photoshop</h2>
+            <div class="box1"></div>
+        </div>
+
+        <div class="box">
+            <h2>Adobe Photoshop</h2>
+            <div class="box1"></div>
+        </div>
+    </div>
+</body>
+</html>

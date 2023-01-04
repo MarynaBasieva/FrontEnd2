@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        padding: 30px;
+        background: rgb(222, 222, 222);
+        width: 50%;
+    }
+
+    .container h1 {
+        margin-bottom: 30px;
+
+    }
+
+    .container h2 {
+        color: gray;
+        margin-bottom: 40px;
+        font-size: 18px;
+    }
+
+    .block-1 h2 {
+        position: relative;
+    }
+
+    .block-1 h2:after {
+        content: '';
+        background-color: rgb(70, 83, 223);
+        width: 70%;
+        height: 3px;
+        position: absolute;
+        left: 0;
+        top: 35px;
+    }
+
+    .block-1 h2:before {
+        content: '';
+        background-color: grey;
+        width: 30%;
+        height: 3px;
+        position: absolute;
+        right: 20px;
+        top: 35px;
+    }
+
+
+</style>
+
+<body>
+    <div class="container">
+
+        <h1>Мои навыки</h1>
+
+        <div class="block-1">
+            <h2>Adobe Photoshop</h2>
+        </div>
+
+        <div class="block-1">
+            <h2>Adobe Photoshop</h2>
+        </div>
+
+        <div class="block-1">
+            <h2>Adobe Photoshop</h2>
+        </div>
+    </div>
+</body>
+
+</html>
