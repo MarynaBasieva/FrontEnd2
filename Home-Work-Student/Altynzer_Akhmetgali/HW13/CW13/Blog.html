@@ -89,6 +89,21 @@
 	.blog_post .img_post {
 		height: 209px;
 		overflow: hidden;
+		position: relative;
+	}
+	.blog_post .img_post:before{
+		content:'';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: rgba(199, 187, 150, 0.5);
+		opacity: 0;
+	}
+	.blog_post:hover .img_post:before,
+	.blog_post:hover .more_info {
+		opacity: 1;
 	}
 
 	.blog_post h2 {
@@ -109,16 +124,9 @@
 		color: #080AA3;
 	}
 
-	.blog_post:hover {
-		background: rgba(199, 187, 150, 0.5);
-		background-size: cover;
-		display: block;
-		z-index: 2;
-	}
 
-	.blog_post:hover .more_info {
-		opacity: 1;
-	}
+
+	
 
 	.more_info {
 		position: absolute;
