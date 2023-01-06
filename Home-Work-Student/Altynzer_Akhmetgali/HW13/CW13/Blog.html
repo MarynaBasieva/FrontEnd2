@@ -1,0 +1,362 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Position Clases</title>
+</head>
+<style>
+	* {
+		padding: 0;
+		margin: 0;
+	}
+
+	/*footer bottom*/
+	html,
+	body {
+		height: 100%;
+	}
+
+	.for_page {
+		min-height: 100%;
+		position: relative;
+	}
+
+	.page {
+		padding-bottom: 200px;
+	}
+
+	.footer {
+		padding: 100px 0;
+		background: #000;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+	}
+
+	/*footer bottom*/
+	.container {
+		width: 1170px;
+		margin: 0 auto;
+	}
+
+	.header {
+		padding: 100px 0;
+		background: #4B2FFD;
+	}
+
+	.blog_main {
+		padding: 60px 0;
+	}
+
+	.blog_post {
+		width: 32.111%;
+		box-sizing: border-box;
+		margin-right: 20px;
+		margin-bottom: 30px;
+		float: left;
+		position: relative;
+		padding: 10px;
+		border-radius: 5px;
+		z-index: 1;
+	}
+
+	.fl {
+		float: left;
+	}
+
+	.clear {
+		clear: both;
+	}
+
+	.blog_post:nth-child(3),
+	.blog_post:nth-child(6),
+	.blog_post:nth-child(9) {
+		margin-right: 0;
+	}
+
+	img {
+		max-width: 100%;
+		width: auto;
+		height: auto;
+	}
+
+	.blog_post .img_post img {
+		width: 100%;
+	}
+
+	.blog_post .img_post {
+		height: 209px;
+		overflow: hidden;
+	}
+
+	.blog_post h2 {
+		margin: 20px 0;
+		min-height: 51px;
+		overflow: hidden;
+	}
+
+	.blog_post h2 a {
+		font-size: 20px;
+		color: #333;
+		text-decoration: none;
+		line-height: 25px;
+		display: block;
+	}
+
+	.blog_post h2 a:hover {
+		color: #080AA3;
+	}
+
+	.blog_post:hover {
+		background: rgba(199, 187, 150, 0.5);
+		background-size: cover;
+		display: block;
+		z-index: 2;
+	}
+
+	.blog_post:hover .more_info {
+		opacity: 1;
+	}
+
+	.more_info {
+		position: absolute;
+		z-index: 999;
+		background-color: black;
+		padding: 10px 30px;
+		width: 100px;
+		text-align: center;
+		color: gold;
+		text-decoration: none;
+		font-size: 20px;
+		display: block;
+		left: 30%;
+		top: 20%;
+		opacity: 0;
+
+	}
+
+	.desc_blog_post {
+		font-size: 15px;
+		color: #333;
+		line-height: 20px;
+		max-height: 43px;
+		overflow: hidden;
+		margin-bottom: 20px;
+	}
+
+	.btn_blog_post {
+		text-decoration: none;
+		display: block;
+		width: 153px;
+		background: #000;
+		text-align: center;
+		height: 40px;
+		color: #fff;
+		line-height: 34px;
+	}
+
+	.btn_blog_post:hover {
+		background: #00657C;
+	}
+</style>
+
+<body>
+	<div class="for_page">
+		<div class="page">
+			<header class="header"></header>
+			<section class="blog_main">
+				<div class="container">
+					<div class="blog">
+
+						<!--  post 1	-->
+						<article class="blog_post">
+							<div class="img_post">
+								<img src="img/marvel1.jpeg" alt="Panda" />
+								<a href="#" class="more_info">More info</a>
+							</div>
+
+							<h2>
+								<a href="#">
+									Marvel 2022 Year in Review: Best Moments in Games
+								</a>
+							</h2>
+							<div class="desc_blog_post">Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem
+								ipsum dolar Lorem ipsum dolar
+							</div>
+							<a href="#" class="btn_blog_post">Подробнее</a>
+						</article>
+						<!--  post 1	-->
+
+
+						<!--  post 2	-->
+						<article class="blog_post">
+							<div class="img_post">
+								<img src="img/marvel2.jpeg" alt="Panda" />
+								<a href="#" class="more_info">More info</a>
+							</div>
+							<h2>
+								<a href="#">
+									Marvel 2022 Year in Review
+								</a>
+							</h2>
+							<div class="desc_blog_post">Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem
+								ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar
+								Lorem ipsum dolar Lorem ipsum dolar
+							</div>
+							<a href="#" class="btn_blog_post">Подробнее</a>
+						</article>
+						<!--  post 2	-->
+
+
+
+						<!--  post 3	-->
+						<article class="blog_post">
+							<div class="img_post">
+								<img src="img/marvel5.jpeg" alt="Panda" />
+								<a href="#" class="more_info">More info</a>
+							</div>
+							<h2>
+								<a href="#">
+									Marvel 2022 Year in Review: Best Moments in Games Best Moments in Games
+								</a>
+							</h2>
+							<div class="desc_blog_post">Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem
+								ipsum dolar Lorem ipsum dolar
+							</div>
+							<a href="#" class="btn_blog_post">Подробнее</a>
+						</article>
+						<!--  post 3	-->
+
+
+
+						<!--  post 4	-->
+						<article class="blog_post">
+							<div class="img_post">
+								<img src="img/marvel4.jpeg" alt="Panda" />
+								<a href="#" class="more_info">More info</a>
+							</div>
+							<h2>
+								<a href="#">
+									Marvel 2022 Year in Review
+								</a>
+							</h2>
+							<div class="desc_blog_post">Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem
+								ipsum dolar Lorem ipsum dolar
+							</div>
+							<a href="#" class="btn_blog_post">Подробнее</a>
+						</article>
+						<!--  post 4	-->
+
+
+
+						<!--  post 5	-->
+						<article class="blog_post">
+							<div class="img_post">
+								<img src="img/marvel5.jpeg" alt="Panda" />
+								<a href="#" class="more_info">More info</a>
+							</div>
+							<h2>
+								<a href="#">
+									Marvel 2022 Year in Review: Best Moments in Games
+								</a>
+							</h2>
+							<div class="desc_blog_post">Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem
+								ipsum dolar Lorem ipsum dolar
+							</div>
+							<a href="#" class="btn_blog_post">Подробнее</a>
+						</article>
+						<!--  post 5	-->
+
+
+						<!--  post 6	-->
+						<article class="blog_post">
+							<div class="img_post">
+								<img src="img/marvel2.jpeg" alt="Panda" />
+								<a href="#" class="more_info">More info</a>
+							</div>
+							<h2>
+								<a href="#">
+									Marvel 2022 Year in Review
+								</a>
+							</h2>
+							<div class="desc_blog_post">Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem
+								ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar
+								Lorem ipsum dolar Lorem ipsum dolar
+							</div>
+							<a href="#" class="btn_blog_post">Подробнее</a>
+						</article>
+						<!--  post 6	-->
+
+
+
+						<!--  post 7	-->
+						<article class="blog_post">
+							<div class="img_post">
+								<img src="img/marvel3.jpeg" alt="Panda" />
+								<a href="#" class="more_info">More info</a>
+							</div>
+							<h2>
+								<a href="#">
+									Marvel 2022 Year in Review: Best Moments in Games Best Moments in Games
+								</a>
+							</h2>
+							<div class="desc_blog_post">Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem
+								ipsum dolar Lorem ipsum dolar
+							</div>
+							<a href="#" class="btn_blog_post">Подробнее</a>
+						</article>
+						<!--  post 7	-->
+
+
+
+						<!--  post 8	-->
+						<article class="blog_post">
+							<div class="img_post">
+								<img src="img/marvel4.jpeg" alt="Panda" />
+								<a href="#" class="more_info">More info</a>
+							</div>
+							<h2>
+								<a href="#">
+									Marvel 2022 Year in Review
+								</a>
+							</h2>
+							<div class="desc_blog_post">Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem
+								ipsum dolar Lorem ipsum dolar
+							</div>
+							<a href="#" class="btn_blog_post">Подробнее</a>
+						</article>
+						<!--  post 8	-->
+
+
+						<!--  post 9	-->
+						<article class="blog_post">
+							<div class="img_post">
+								<img src="img/marvel4.jpeg" alt="Panda" />
+								<a href="#" class="more_info">More info</a>
+							</div>
+							<h2>
+								<a href="#">
+									Marvel 2022 Year in Review
+								</a>
+							</h2>
+							<div class="desc_blog_post">Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem
+								ipsum dolar Lorem ipsum dolar
+							</div>
+							<a href="#" class="btn_blog_post">Подробнее</a>
+						</article>
+						<!--  post 9	-->
+						<div class="clear"></div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<footer class="footer">
+		</footer>
+	</div>
+
+</body>
+
+</html>
