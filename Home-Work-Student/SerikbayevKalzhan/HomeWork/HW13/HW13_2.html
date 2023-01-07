@@ -11,6 +11,27 @@
         margin: 0;
         padding: 0;
     }
+    /* footer bottom */
+    html,
+    body{
+        height: 100%;
+    }
+    .for_page{
+        min-height: 100%;
+        position:relative;
+    }
+    .page{
+        padding-bottom: 200px;
+    }
+    .footer{
+        padding: 100px 0;
+        background: #000;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    /* footer bottom */
     .container{
         width: 1170px;
         margin: 0 auto;
@@ -42,7 +63,7 @@
     }
     .blog_post:nth-child(3),
     .blog_post:nth-child(6),
-    .blog_post:nth-child(8){
+    .blog_post:nth-child(9){
         margin-right: 0;
     }
     img{
@@ -50,36 +71,79 @@
         width:auto;
         height:auto;
     }
-    .parent .box img{
+    .blog_post .img_post img{
         width:100%;
     }
-    .parent .box h2{
-        font-size: 23px;
-        margin: 15px 0;
+    .blog_post .img_post{
+        height: 160px;
+        overflow:hidden;
+        position: relative;
     }
-    .parent .box .text{
-        font-size: 14px;
-        text-align: justify;
-        line-height: 21px;
+    .blog_post .img_post:before{
+		content:'';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: rgba(199, 187, 150, 0.5);
+		opacity: 0;
+	}
+	.blog_post:hover .img_post:before,
+	.blog_post:hover .info {
+		opacity: 1;
+	}
+    .blog_post h2{
+        margin: 20px 0;
+        min-height: 125px;
+        overflow: hidden;
+    }
+    .blog_post h2 a{
+        font-size: 20px;
+        color: rgb(13, 26, 170);
+        text-decoration: none;
+        line-height: 25px;
+        display: block;
+    }
+    .blog_post h2 a:hover{
+        color: rgb(177, 32, 235);
+    }
+    .info{
+        position: absolute;
+        z-index: 999;
+        background-color: black;
+		padding: 10px 30px;
+		width: 100px;
+		text-align: center;
+		color: gold;
+		text-decoration: none;
+		font-size: 20px;
+		display: block;
+		left: 30%;
+		top: 20%;
+		opacity: 0;
+    }
+    .desc_blog_post p{
+        font-size: 15px;
+        color: #333;
+        line-height: 20px;
+        max-height: 43px;
+        overflow: hidden;
         margin-bottom: 20px;
     }
-    .more{
+    .btn_blog_post{
         text-decoration: none;
         display: block;
-        width: 100%;
-        padding: 7px 0;
+        width: 153px;
+        background: rgb(22, 94, 161);
+        color:#ccc;
         text-align: center;
-        background: rgb(14, 77, 119);
-        color: #fff;
         height: 40px;
-        transition: all ease 0.3s;
-        line-height: 38px;
+        margin: 0 auto;
+        line-height: 34px;
     }
-    .more:hover{
-        background: rgb(145, 107, 163);
-    }
-    .parent .box:hover .more{
-        background: rgb(145, 107, 163);
+    .btn_blog_post:hover{
+        background: #4B2FFD;
     }
 </style>
 <body>
@@ -92,7 +156,10 @@
         
                         <!-- blog1 -->
                         <article class="blog_post">
-                            <img src="img2/panda1.jpeg" alt="Panda" />
+                            <div class="img_post">
+                                <img src="img2/panda1.jpeg" alt="Panda" />
+                                <a href="#" class="info">Info</a>
+                            </div>
                             <h2>
                                 <a href="#">
                                     «Кунг-фу панда» — полнометражный анимационный фильм 2008 года производства DreamWorks Animation, премьера которого в России состоялась 5 июня 2008 года в формате 2D 
@@ -108,7 +175,10 @@
         
                         <!-- blog2 -->
                         <article class="blog_post">
-                            <img src="img2/panda2.jpeg" alt="Panda" />
+                            <div class="img_post">
+                                <img src="img2/panda2.jpeg" alt="Panda" />
+                                <a href="#" class="info">Info</a>
+                            </div>
                             <h2>
                                 <a href="#">
                                     «Кунг-фу панда» — полнометражный анимационный фильм 2008 года производства DreamWorks Animation.
@@ -124,7 +194,10 @@
         
                         <!-- blog3 -->
                         <article class="blog_post">
-                            <img src="img2/panda5.jpg" alt="Panda" />
+                            <div class="img_post">
+                                <img src="img2/panda12.jpg" alt="Panda" />
+                                <a href="#" class="info">Info</a>
+                            </div>
                             <h2>
                                 <a href="#">
                                     «Кунг-фу панда» — полнометражный анимационный фильм 2008 года производства DreamWorks Animation, премьера которого в России состоялась 5 июня 2008 года в формате 2D 
@@ -140,7 +213,10 @@
                         
                         <!-- blog4 -->
                         <article class="blog_post">
-                            <img src="img2/tiger.jpg" alt="Panda" />
+                            <div class="img_post">
+                                <img src="img2/tiger.jpg" alt="Panda" />
+                                <a href="#" class="info">Info</a>
+                            </div>
                             <h2>
                                 <a href="#">
                                     «Кунг-фу панда» — полнометражный анимационный фильм 2008 года производства DreamWorks Animation, премьера которого в России состоялась 5 июня 2008 года в формате 2D 
@@ -156,7 +232,10 @@
         
                         <!-- blog5 -->
                         <article class="blog_post">
-                            <img src="img2/tiger2.jpg" alt="Panda" />
+                            <div class="img_post">
+                                <img src="img2/panda11.jpg" alt="Panda" />
+                                <a href="#" class="info">Info</a>
+                            </div>
                             <h2>
                                 <a href="#">
                                     «Кунг-фу панда» — полнометражный анимационный фильм 2008 года производства DreamWorks Animation, премьера которого в России состоялась 5 июня 2008 года в формате 2D 
@@ -172,7 +251,10 @@
         
                         <!-- blog6 -->
                         <article class="blog_post">
-                            <img src="img2/panda6.jpg" alt="Panda" />
+                            <div class="img_post">
+                                <img src="img2/panda6.jpg" alt="Panda" />
+                                <a href="#" class="info">Info</a>
+                            </div>
                             <h2>
                                 <a href="#">
                                     «Кунг-фу панда» — полнометражный анимационный фильм 2008 года производства DreamWorks Animation, премьера которого в России состоялась 5 июня 2008 года в формате 2D 
@@ -188,7 +270,10 @@
         
                         <!-- blog7 -->
                         <article class="blog_post">
-                            <img src="img2/panda7.jpg" alt="Panda" />
+                            <div class="img_post">
+                                <img src="img2/panda7.jpg" alt="Panda" />
+                                <a href="#" class="info">Info</a>
+                            </div>
                             <h2>
                                 <a href="#">
                                     «Кунг-фу панда» — полнометражный анимационный фильм 2008 года производства DreamWorks Animation, премьера которого в России состоялась 5 июня 2008 года в формате 2D 
@@ -204,7 +289,10 @@
         
                         <!-- blog8 -->
                         <article class="blog_post">
-                            <img src="img2/panda8.jpg" alt="Panda" />
+                            <div class="img_post">
+                                <img src="img2/panda8.jpg" alt="Panda" />
+                                <a href="#" class="info">Info</a>
+                            </div>
                             <h2>
                                 <a href="#">
                                     «Кунг-фу панда» — полнометражный анимационный фильм 2008 года производства DreamWorks Animation, премьера которого в России состоялась 5 июня 2008 года в формате 2D 
@@ -216,6 +304,25 @@
                             <a href="#" class="btn_blog_post">Подробнее</a>
                         </article>
                         <!-- blog8 -->
+
+
+                        <!-- blog9 -->
+                        <article class="blog_post">
+                            <div class="img_post">
+                                <img src="img2/panda9.jpg" alt="Panda" />
+                                <a href="#" class="info">Info</a>
+                            </div>
+                            <h2>
+                                <a href="#">
+                                    «Кунг-фу панда» — полнометражный анимационный фильм 2008 года производства DreamWorks Animation, премьера которого в России состоялась 5 июня 2008 года в формате 2D 
+                                </a>
+                            </h2>
+                            <div class="desc_blog_post">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, natus quae, reiciendis cum, laborum sapiente vel necessitatibus libero enim tempora eaque. Incidunt beatae eveniet a repudiandae? Quas deleniti, facilis tenetur dicta ipsum facere eos! Tenetur dolor aut voluptatem consectetur rem iusto quibusdam laboriosam non, dignissimos suscipit officiis ullam! Delectus cumque eaque nam culpa eligendi dolore cupiditate placeat laborum obcaecati dolor? ipsum dolor sit amet consectetur, adipisicing elit. Adipisci quod neque odio dolorem ipsa corporis odit sapiente sed nulla enim. ipsum, dolor sit amet consectetur adipisicing elit. In ratione aliquid expedita cum ad totam voluptatibus nisi consequatur temporibus minus? ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptate tenetur, quaerat saepe non eius aliquam hic omnis et excepturi.</p>
+                            </div>
+                            <a href="#" class="btn_blog_post">Подробнее</a>
+                        </article>
+                        <!-- blog9 -->
                         <div class="clear"></div>
                     </div>
                 </div>
