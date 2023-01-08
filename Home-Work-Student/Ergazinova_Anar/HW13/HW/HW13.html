@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassWork13</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        .for_page {
+            min-height: 100%;
+            position: relative;
+        }
+
+        .fr {
+            float: right;
+        }
+
+        .page {
+            padding-bottom: 200px;
+        }
+
+        body {
+            font-style: 'Roboto', sans-serif;
+        }
+
+        .container {
+            width: 1170px;
+            margin: 0 auto;
+        }
+
+        .container1 {
+            width: 1170px;
+            margin: 0 auto;
+        }
+
+        .header {
+            padding-top: 20px;
+            background: rgba(24, 95, 161, 0.37);
+        }
+
+
+        .footer {
+            padding-top: 20px;
+            background: rgba(24, 95, 161, 0.37);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            color:rgb(20, 9, 9);
+            padding: 90px 0;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .logo {
+            width: 150px;
+            padding-left: 15px;
+        }
+
+        .slogan {
+            margin-left: 0;
+            font-size: 25px;
+        }
+
+        .contact_header {
+            padding: 50px;
+        }
+
+        .contact_header a{
+            display:block;
+            text-decoration: none;
+            color:rgb(20, 9, 9);
+            transition: all ease 0.3s;
+        }
+
+        .contact_header a:hover{
+            color: rgb(156, 34, 34);
+        }
+
+        .nav {
+            background: rgba(27, 25, 25, 0.459);
+        }
+
+        .nav ul.sub-menu li{
+            list-style: none;
+            display: inline-block;
+            position: relative;
+        }
+
+        .nav ul.sub-menu > li > a{
+            color:#fff;
+            font-size: 15px;
+            padding: 20px 30px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .nav ul.sub-menu > li > a:hover {
+            background: rgb(187, 67, 67);
+        }
+
+        .nav ul.sub-menu li ul.sub-menu {
+            opacity: 0;
+            visibility: hidden;
+            background: rgb(12, 129, 158);
+            width:300px;
+            position: absolute;
+        }
+
+        .nav ul.sub-menu li:hover ul.sub-menu {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .nav ul.sub-menu li ul.sub-menu li,
+        .nav ul.sub-menu li ul.sub-menu li a {
+            display: block;
+        }
+
+        .banner {
+            background: url("7.jpg") no-repeat;
+            padding: 200 px 0;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .banner_text {
+            color:rgb(255, 255, 255);
+            padding: 30px;
+            background: rgb (0,0,0,0.7);
+            width: 600px;
+        }
+
+        .banner_text div:first-child {
+            margin-bottom: 40px;
+            font-size: 30px;
+        }
+
+        .banner_text div:last-child {
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        .about {
+            background:rgba(12, 129, 158, 0.459);
+            padding: 60px 0; 
+        }
+
+        .about h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 30px;
+            color:rgb(47, 16, 156);
+        }
+
+        .sidebar {
+            background: #fff;
+            padding: 10px;
+            width: 30%;
+            display: block;
+            margin-right: 30px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar ul li a{
+            padding: 8px;
+            padding-left: 5px;
+            display: block;
+            text-decoration: none;
+            color: rgb(223, 25, 25);
+            border-bottom: solid 1px rgb(56, 56, 49);
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul li a:hover {
+            background: #000;
+            border-bottom: solid 1px transparent;
+        }
+
+        .content {
+            width: 65%;
+        }
+
+        .content figure {
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .content figure img {
+            width: 200px;
+            height: 150px;
+        }
+
+        .content p{
+            font-size: 25px;
+        }
+
+        .parent .box {
+            width: 32.111%;
+            box-sizing: border-box;
+            padding: 15px;
+            background: #ccc;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        .fl {
+            float: left;
+        }
+
+        .clear {
+            clear:both;
+        }
+
+        .parent .box:nth-child(3),
+        .parent .box:nth-child(6){
+            margin-right: 0;
+        }
+
+        img {
+            max-width: 100%;
+            width: 200px;
+            height: 220px;
+        }
+
+        .parent .box img {
+            width: 100%;
+        }
+
+        .parent .box h2 {
+            font-size: 23px;
+            margin: 15px 0;
+            padding-left: 100px;
+        }
+
+        .parent .box h2:hover {
+            color: rgb(4, 60, 143);
+        }
+
+        .parent .box .text {
+            font-size: 14px;
+            text-align: justify;
+            line-height: 20px;
+            margin-bottom: 20px;
+            padding-left: 75px;
+        }
+
+        .more {
+            text-decoration: none;
+            display:block;
+            width:100%;
+            padding: 7px 0;
+            text-align: center;
+            background: #000;
+            color: #fff;
+            transition: all ease 0.3s;
+            height: 40px;
+            line-height: 38px;
+        }
+
+        .more:hover {
+            background: rgb(184, 28, 28);
+        }
+
+        .parent .box:hover .more{
+            background: rgb(184, 28, 28);
+        }
+    </style>
+</head>
+<body>
+    <div class="for_page">
+        <div class="page">
+            <header class="header">
+                <div class="container1">
+                    <a href="/" class="logo">
+                        <img src="10.png" alt="Logo fl" title="Logo"/>
+                    </a>
+                    <div class="slogan">
+                        Korean Selebrities News
+                    </div>
+                    <div class="contact_header fr">
+                        <a href="tel:+7700-700-00">Telephone:+7700-700-00</a>
+                        <a href="tel:+77122-55-66-77">Telephone:+77122-55-66-77</a>
+                        <a href="mailto:AsiaNews@yandex.com">Mail:AsiaNews@yandex.com</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <nav class="nav">
+                    <div class="container1">
+                        <ul class="sub-menu">
+                            <li class="item-menu">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#">About</a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#">News</a>
+                                <ul class="sub-menu">
+                                    <li class="item-menu">
+                                        <a href="#">Weekly News</a>
+                                    </li>
+                                    <li class="item-menu">
+                                        <a href="#">Monthly News</a>
+                                    </li>
+                                    <li class="item-menu">
+                                        <a href="#">Last Week News</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <section class="banner">
+                <div vlass="container1">
+                    <div class="banner_text">
+                        <div>Weekly South Korea</div>
+                        <div>
+                            News about Korean Actors, <br/>
+                            Singers, <br/>
+                            K-pop Idols, <br/>
+                            Films and Dramas.
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about">
+                <div class="container1">
+                    <h1>About our company</h1>
+                    <sidebar class="sidebar fl">
+                        <ul class="sidebar_menu">
+                            <li class="item-menu"><a href="#">Catalog1</a></li>
+                            <li class="item-menu"><a href="#">Catalog2</a></li>
+                            <li class="item-menu"><a href="#">Catalog3</a></li>
+                            <li class="item-menu"><a href="#">Catalog4</a></li>
+                        </ul>
+                    </sidebar>
+                    <div class="content fl">
+                        <figure class="fl"><img src="1.jpg" class="eun"/></figure>
+                        <p>Our Ambassador Cha Eun Woo. Famous Korean actor and singer. Memder of korean idol-group "ASTRO". 26 years old, born in South Korea, Seoul.</p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </section>
+                <section class="blog_kitty">
+                    <div class="container">
+                        <div class="parent">
+            
+                    <div class="box fl">
+                         <img src="1.jpg" alt="kitty"/>
+                         <h2>Cha Eun Woo</h2>
+                         <div class="text">Korean Famous Handsome Actor</div>
+                         <a href="#" class="more">More</a>
+                    </div>
+            
+                    <div class="box fl">
+                        <img src="2.jpg" alt="kitty"/>
+                        <h2>Park Seo Jun</h2>
+                        <div class="text">Korean Famous Handsome Actor</div>
+                        <a href="#" class="more">More</a>
+                   </div>
+            
+                   <div class="box fl">
+                    <img src="3.jpg" alt="kitty"/>
+                    <h2>Park Hyun Shik</h2>
+                    <div class="text">Korean Famous Handsome Actor</div>
+                    <a href="#" class="more">More</a>
+               </div>
+            
+               <div class="box fl">
+                <img src="4.jpg" alt="kitty"/>
+                <h2>Lee Jung Suk</h2>
+                <div class="text">Korean Famous Handsome Actor</div>
+                <a href="#" class="more">More</a>
+            </div>
+            
+            <div class="box fl">
+                <img src="5.jpg" alt="kitty"/>
+                <h2>Park Hae Jin</h2>
+                <div class="text">Korean Famous Handsome Actor</div>
+                <a href="#" class="more">More</a>
+            </div>
+            
+            <div class="box fl">
+                <img src="6.jpg" alt="kitty"/>
+                <h2>Song Kang</h2>
+                <div class="text">Korean Famous Handsome Actor</div>
+                <a href="#" class="more">More</a>
+            </div>
+            <div class="clear"></div>
+                        </div>
+                    </div>
+                </section>
+        </div>
+        <footer class="footer">
+            <div class="container1"><b>We hope, you are enjoying.</b></div>
+        </footer>
+    </div>
+</body>
+</html>
