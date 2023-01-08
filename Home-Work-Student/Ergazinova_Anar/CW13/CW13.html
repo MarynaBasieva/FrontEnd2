@@ -97,13 +97,26 @@
             opacity: 0.8;
         }
 
-
+		.click:before{
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: rgb(0,0,0,0.7);
+			z-index: 1;
+			opacity: 0;
+		}
+		.click:hover:before{
+			opacity: 1;
+		}
         .click_here {
             position: absolute;
             display:block;
-            top: 40%;
-            left:20%;
-            translate: -50%,-50%;
+            top: 50%;
+            left:50%;
+			transform: translate(-50%,-50%);
             background: rgb(148, 125, 125);
             font-family: fantasy;
             text-align: center;
@@ -113,9 +126,10 @@
             font-size: 30px;
             text-decoration: none;
             opacity: 0;
+			z-index: 2;
         }
 
-        .click_here:hover {
+        .click:hover  .click_here{
             background: #000;
             opacity: 1;
         }
