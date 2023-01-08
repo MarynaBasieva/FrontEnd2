@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url("images/bg.webp") no-repeat ;
+    background-size: cover;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto Slab', serif;   */
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+/* BUTTON */
+.container a {
+    text-align: center;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, 50%);
+    background: linear-gradient(#044984, #0BB9DB);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+    height: 80px;
+    width: 250px;
+    /* display: none; */
+}
+
+.container a:hover {
+    background: linear-gradient(#3c2654, #0BB9DB);
+    font-size: 21px;
+}
+
+.container a:active {
+    background: linear-gradient( #0BB9DB, #3c2654); 
+    cursor: grabbing;
+}
+/* BUTTON */
+
+
+/* MODAL WINDOW */
+.modal_bg {
+    position: absolute;
+    background: rgb(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    
+}
+
+.modal_window {
+    background: linear-gradient(#044984, #0BB9DB);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    height: 270px;
+}
+
+.modal_bg .modal_window h2 {
+    font-weight: 400;
+    margin: 15px 0;
+    color: rgb(222, 220, 220);
+}
+
+.modal_bg .modal_window a {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    color: rgb(214, 213, 213);
+    text-decoration: none;
+}
+
+.modal_bg .modal_window form input,
+.modal_bg .modal_window form button {
+    display: block;
+}
+
+.modal_bg .modal_window form input {
+    margin: 15px 0;
+    padding-bottom: 10px;
+    width: 250px;
+    background: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    border-bottom: rgb(192, 192, 192) 1px solid;
+}
+
+.modal_bg .modal_window form input::placeholder {
+    color: rgb(222, 220, 220);
+}
+
+.modal_bg .modal_window form button {
+    padding: 10px 0;
+    width: 100%;
+    color: white;
+    background: linear-gradient(to right, #ed8961, #EC584E);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+    height: 40px;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5);
+}
+
+.modal_bg .modal_window form button:hover {
+    border: 1px solid grey;
+    cursor: pointer;
+    font-size: 16px;
+    box-sizing: border-box;
+
+}
+
+/* MODAL WINDOW */
