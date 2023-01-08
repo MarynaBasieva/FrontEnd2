@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW12_Modal</title>
+    <script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        max-width: 100%;
+        width: auto;
+    }
+    .parent_modal{
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgb(0, 0, 0, 0.7);
+        top: 0;
+        left: 0;
+    }
+    .wrapp_modal{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        /* margin-left: -200px;
+        margin-top: -275px; */
+        transform: translate(-50%,-50%);
+        width: 400px;
+        height: 550px;
+        background: #fff;
+        padding: 15px 20px;
+    }
+    .form_modal h2{
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .form{
+        display: block;
+        width: 400px;
+    }
+    .form .input{
+        width: 100%;
+        height: 40px;
+        outline: none;
+        border: #000 solid 1px;
+        font-size: 15px;
+        display: block;
+        margin-bottom: 20px;
+        padding: 5px 10px;
+        box-sizing: border-box;
+    }
+    .form .textarea::placeholder,
+    .form .input::placeholder{
+        color: #000;
+    }
+    .form .textarea:focus::placeholder,
+    .form .input:focus::placeholder{
+        color: #ccc;
+    }
+    .form .textarea:focus,
+    .form .input:focus{
+        border: #ccc solid 1px;
+    }
+    .textarea{
+        width: 100%;
+        height: 150px;
+        outline: none;
+        border: #000 solid 1px;
+        font-size: 15px;
+        display: block;
+        margin-bottom: 20px;
+        padding: 5px 10px;
+        box-sizing: border-box;  
+    }
+    .btn_baner,
+    .form .btn{
+        outline: none;
+        border: none;
+        width: 200px;
+        height: 40px;
+        text-align: center;
+        padding: 10px 0;
+        background: #333;
+        color: #fff;
+        cursor: pointer;
+    }
+    .btn_baner:hover,
+    .form .btn:hover{
+        background: #030a93;
+    }
+    .closed{
+        position: absolute;
+        right: 20px;
+        top: 6px;
+        color: #333;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .closed:hover{
+        color: #030a93;
+    }
+</style>
+<body>
+    <section class="baners">
+        <img src="img/HW12.jpg" alt="cool">
+        <img src="img/HW12.jpg" alt="cool">
+        <div class="btn_baner">Обратный звонок</div>
+    </section>
+    <div class="parent_modal">
+        <div class="wrapp_modal">
+            <div class="closed">x</div>
+            <div class="form_modal">
+                <h2>Heading Form</h2>
+                <form class="form">
+                    <input type="text" class="input" placeholder="First Name">
+                    <input type="text" class="input" placeholder="Last Name">
+                    <input type="text" class="input" placeholder="Your phone">
+                    <input type="text" class="input" placeholder="Your e-mail">
+                    <textarea class="textarea" placeholder="Your message"></textarea>
+                    <button class="btn">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

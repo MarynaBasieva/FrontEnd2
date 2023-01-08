@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW12_img</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+    .container{
+        width: 1170px;
+        margin: 0 auto;
+    }
+    .box-image{
+        position: relative;
+        max-width: 500px;
+    }
+    .box-image::before{
+        content: "";
+        background: rgba(66, 103, 252, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        opacity: 0;
+    }
+    .box-image:hover::before{
+        opacity: 1;
+    }
+    .block_img{
+        position: absolute;
+        left: 50%;
+        top: 85%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-size: 20px;
+        opacity: 0;
+    }
+    .box-image:hover .block_img{
+        opacity: 1;
+    }
+
+</style>
+<body>
+    <section class="box">
+        <div class="container">
+            <div class="box-image">
+                <img src="img/HW12.jpg" alt="cool">
+                <div class="block_img">
+                    <div class="text_img">
+                        Stairs with flowers
+                    </div>
+                    <a href="#">Look</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
