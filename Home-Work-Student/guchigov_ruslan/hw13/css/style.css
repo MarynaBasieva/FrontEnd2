@@ -12,6 +12,7 @@ html,
 body {
   font-family: 'Open Sans', Verdana, sans-serif;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 .fl {
@@ -33,6 +34,7 @@ p {
 
 .page-wrapper {
   height: 100%;
+  box-sizing: border-box;
   /* margin: auto;
   max-width: 1440px; */
 }
@@ -40,11 +42,12 @@ p {
 .container {
   max-width: 1170px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .header {
   padding-top: 20px;
-  background-color: rgba(0, 255, 255, 0.205);
+  background-color: rgb(139, 248, 210);
 }
 
 .logo {
@@ -61,6 +64,7 @@ p {
 
 .contacts a {
   display: block;
+  padding: 5px;
   text-decoration: none;
   color: #3b5998;;
   font-weight: bold;
@@ -73,17 +77,22 @@ p {
 }
 
 .header__nav {
-  background-color: #3b5998;
+  background: linear-gradient(to right, #001240, #013f7c,  #01e1e9);
 }
-.menu li {
+.menu__item {
   list-style: none;
   display: inline-block;
   position: relative;
 }
-.menu li:hover .submenu {
+.menu__item:hover .submenu {
   visibility: visible;
   opacity: 1;
   transition: all 0.3s ease;
+}
+.menu {
+  margin-left: 300px;
+  margin-left: 33.3%;
+  min-width: 700px;
 }
 .menu a {
   display: inline-block;
@@ -91,15 +100,32 @@ p {
   font-size: 20px;
   padding: 20px 30px;
   text-decoration: none;
+  position: relative;
+}
+.menu a::after{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  width: 0;
+  height: 1px;
+  background-color: #ffffff;
+  content: "";
+  text-decoration: underline;
+  transition: width 0.5s ease-out
+}
+.menu a:hover:after,
+.menu a:focus:after {
+  width: 100%;
 }
 .menu a:hover {
-  background-color: #000000;
+  background: rgb(0, 0, 0);
   transition: all 0.3s ease;
 }
 .submenu {
   font-size: 15px;
   visibility: hidden;
-  background: #506eaf;
+  background-color: rgba(0, 0, 0, 0.708);
   width: 200px;
   position: absolute;
   opacity: 0;
@@ -108,27 +134,30 @@ p {
 .submenu a {
   display: block;
 }
+.submenu a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
 .main {
   box-sizing: border-box;
   min-height: 100%;
-  padding-bottom: 150px;
-  background: #1c1e21;
+  padding-bottom: 100px;
+  background: url('../img/back.webp') fixed center /cover;
   color: #ffffff;
 }
 
 .banner {
-  background: url('../img/banner2.jpg') no-repeat center;
+  background: url('../img/banner2.webp') no-repeat fixed center / cover;
   background-size: cover;
   padding: 50px 0;
 }
 .banner__text {
   background-color: #020202b2;
   width: 600px;
-  margin-left: 300px;
+  margin-left: 34.3%;
 }
 
 .about {
-  background-color: #b8c4de;
   padding: 60px 0;
 }
 
@@ -140,8 +169,7 @@ p {
 }
 
 .sidebar {
-  background-color: #333333b5;
-  padding: 10px;
+  background: linear-gradient(to right, #304372, #556371);
   display: block;
   width: 33.3%;
   margin-right: 10px;
@@ -150,26 +178,32 @@ p {
   padding: 0;
   margin: 0;
 }
+
 .sidebar-menu {
+  box-sizing: border-box;
+  overflow: hidden;
   list-style: none;
 }
+
 .sidebar-menu a {
   display: block;
-  padding: 8px 8px 20px 5px;
-  margin-bottom: 20px;
+  padding: 10px;
   color: #ffffff;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.662);
 }
+
 .sidebar-menu a:hover {
-  color: #000000;
-  background-color: #ffffff;
+  color: #ffffff;
+  font-weight: bold;
+  background: linear-gradient(#001240, #013f7c);
   border-bottom: 1px solid rgba(0, 0, 0, 0);
   transition: all 0.3s ease;
 }
+
 .content {
   color: #000000;
-  width: 60%;
+  width: 64%;
 }
 .content p {
   padding-top: 0;
@@ -177,14 +211,38 @@ p {
 .content img {
   width: 400px;
 }
+.main-text {
+  padding: 40px 0;
+}
+.main-text p {
+  background-color: rgba(0, 0, 0, 0.566);
+}
+
 .main-text__heading {
+  color: #000000;
   text-align: center;
 }
+
 .footer {
-  background-color: #3b5998;
+  box-sizing: border-box;
+  background-color: rgb(139, 248, 210);
   color: #ffffff;
-  min-height: 150px;
-  margin-top: -150px;
+  padding-top: 25px;
+  min-height: 100px;
+  margin-top: -100px;
+}
+
+.social-list {
+  background-color: #ffffff;
+  list-style: none;
+  margin-left: 24%;
+}
+
+.social-list__item a{
+  display: block;
+  padding: 20px 20px;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 /* lab work start here */
