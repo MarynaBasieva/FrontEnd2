@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <title>Home work 13</title>
+  <script src="./js/jquery-3.6.3.min.js"></script>
+  <script src="./js/custom.js"></script>
 </head>
 
 <body>
@@ -95,7 +97,7 @@
           </div>
           <div class="content fl">
             <figure class="fl">
-              <img src="./img/banner.jpg" alt="happy">
+              <img src="./img/happy.jpg" alt="happy">
             </figure>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsa, quidem perspiciatis repudiandae
               optio quae ullam laborum voluptates praesentium asperiores. Nemo, id exercitationem! Quidem laudantium
@@ -208,6 +210,30 @@
         </p>
       </div>
     </footer>
+    <div class="take-order">
+      Подать заявку
+    </div>
+    <div class="lab">
+      <div class="modal-wrap" id="modal-wrap">
+        <button class="closed">x</button>
+        <div class="form-wrap">
+          <form class="form" method="get">
+            <h2>Подать заявку</h2>
+            <div class="inputs">
+              <input class="input" type="text" name="name" placeholder="Ваше Имя *" minlength="3" maxlength="30"
+                required>
+              <input class="input" type="tel" name="tel" placeholder="Ваш телефон *" minlength="7" maxlength="30"
+                required>
+              <input class="input" type="email" name="email" placeholder="Ваш E-mail *" minlength="5" maxlength="25"
+                required>
+              <input class="input" type="text" name="town" placeholder="Ваш город *" minlength="3" maxlength="30"
+                required>
+              <button class="input modal-btn">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 

@@ -94,6 +94,7 @@ p {
 }
 .menu a:hover {
   background-color: #000000;
+  transition: all 0.3s ease;
 }
 .submenu {
   font-size: 15px;
@@ -116,9 +117,9 @@ p {
 }
 
 .banner {
-  background: url('./img/banner.webp') no-repeat center;
+  background: url('../img/banner2.jpg') no-repeat center;
   background-size: cover;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 .banner__text {
   background-color: #020202b2;
@@ -164,6 +165,7 @@ p {
   color: #000000;
   background-color: #ffffff;
   border-bottom: 1px solid rgba(0, 0, 0, 0);
+  transition: all 0.3s ease;
 }
 .content {
   color: #000000;
@@ -183,4 +185,141 @@ p {
   color: #ffffff;
   min-height: 150px;
   margin-top: -150px;
+}
+
+/* lab work start here */
+.lab {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.624);
+}
+.inputs {
+  margin-top: 50px;
+}
+.input {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 60%;
+  font-size: 20px;
+  padding: 15px 2px 5px 2px;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #ffffffa5;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.modal-wrap {
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  width: 400px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  background: linear-gradient(#013d6a, #0598c1, #16bbe8 );
+  box-shadow: 0 0 15px #000000;
+  border-radius: 10px;
+}
+
+.form {
+  height: 100%;
+}
+
+.form h2 {
+  font-weight: normal;
+  margin: 40px 0 0 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.input:focus-visible {
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input::placeholder {
+  color: #ffffff97;
+  font-size: 15px;
+}
+.input:focus-visible::placeholder {
+  color: rgba(255, 255, 255, 0.098);
+}
+.input.modal-btn {
+  padding: 0;
+}
+.modal-btn {
+  background: linear-gradient(to right, #e9835d, #ee574e);
+  height: 50px;
+  margin-top: 50px;
+  color: #ffffffc4;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 15px;
+  border: none;
+}
+
+.closed {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 5px;
+  width: 35px;
+  height: 30px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 25px;
+  padding: 2px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+.closed:hover{
+  opacity: 1;
+}
+.closed:active {
+  color: #000000;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+.modal-btn:active {
+  background: linear-gradient(to right, #894c35, #7f2e2a);
+  color: #7c7c7c;
+}
+
+.take-order {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #ffffff;
+  background: linear-gradient(to right, #e9835d, #ee574e);
+  border-radius: 5px;
+  margin: 20px;
+  opacity: 0.7;
+}
+
+.take-order:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
