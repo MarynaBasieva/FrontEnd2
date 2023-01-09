@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassWork13</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 1170px;
+            margin: 0 auto;
+        }
+
+        .header {
+            padding: 100px 0;
+            background: rgba(24, 95, 161, 0.37);
+        }
+
+
+        .footer {
+            padding: 100px 0;
+            background: rgba(24, 95, 161, 0.37);
+        }
+
+        .parent .box {
+            width: 30%;
+            box-sizing: border-box;
+            padding: 20px;
+            background: #ccc;
+            margin-right: 20px;
+            margin-bottom: 30px;
+        }
+
+        .fl {
+            float: left;
+        }
+
+        .clear {
+            clear:both;
+        }
+
+
+        img {
+            max-width: 100%;
+            width: auto;
+            height: auto;
+        }
+
+        .parent .box img {
+            width: 100%;
+        }
+
+        .parent .box h2 {
+            font-size: 23px;
+            margin: 15px 0;
+        }
+
+        .parent .box .text {
+            font-size: 14px;
+            text-align: justify;
+            line-height: 20px;
+            margin-bottom: 20px;
+        }
+
+        .more {
+            text-decoration: none;
+            display:block;
+            width:100%;
+            padding: 7px 0;
+            text-align: center;
+            background: #000;
+            color: #fff;
+            transition: all ease 0.3s;
+            height: 40px;
+            line-height: 38px;
+        }
+
+        .more:hover {
+            background: rgb(184, 28, 28);
+        }
+
+        .parent .box:hover .more{
+            background: rgb(184, 28, 28);
+        }
+
+        .click {
+            display: block;
+            position:relative;
+        }
+
+        .click:hover {
+            opacity: 0.8;
+        }
+
+		.click:before{
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: rgb(0,0,0,0.7);
+			z-index: 1;
+			opacity: 0;
+		}
+		.click:hover:before{
+			opacity: 1;
+		}
+        .click_here {
+            position: absolute;
+            display:block;
+            top: 50%;
+            left:50%;
+			transform: translate(-50%,-50%);
+            background: rgb(148, 125, 125);
+            font-family: fantasy;
+            text-align: center;
+            border-radius: 5px;
+            width: 150px;
+            padding: 15px;
+            font-size: 30px;
+            text-decoration: none;
+            opacity: 0;
+			z-index: 2;
+        }
+
+        .click:hover  .click_here{
+            background: #000;
+            opacity: 1;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="for_page">
+        <div class="page">
+            <header class="header">
+            </header>
+    <section class="blog_kitty">
+        <div class="container">
+            <div class="parent">
+
+        <div class="box fl">
+            <div class="click">
+            <a href="#" class="click_here">Click here!</a>
+            <img src="kitty-cat-sandwich.gif" alt="kitty"/>
+            </div>
+
+             <h2>Cute Kitty</h2>
+             <div class="text">Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty</div>
+             <a href="#" class="more">More</a>
+        </div>
+
+        <div class="box fl">
+            <img src="kitty-cat-sandwich.gif" alt="kitty"/>
+            <h2>Cute Kitty</h2>
+            <div class="text">Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty</div>
+            <a href="#" class="more">More</a>
+       </div>
+
+       <div class="box fl">
+        <img src="kitty-cat-sandwich.gif" alt="kitty"/>
+        <h2>Cute Kitty</h2>
+        <div class="text">Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty</div>
+        <a href="#" class="more">More</a>
+   </div>
+
+   <div class="box fl">
+    <img src="kitty-cat-sandwich.gif" alt="kitty"/>
+    <h2>Cute Kitty</h2>
+    <div class="text">Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty</div>
+    <a href="#" class="more">More</a>
+</div>
+
+<div class="box fl">
+    <img src="kitty-cat-sandwich.gif" alt="kitty"/>
+    <h2>Cute Kitty</h2>
+    <div class="text">Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty</div>
+    <a href="#" class="more">More</a>
+</div>
+
+<div class="box fl">
+    <img src="kitty-cat-sandwich.gif" alt="kitty"/>
+    <h2>Cute Kitty</h2>
+    <div class="text">Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty Little Cute Kitty</div>
+    <a href="#" class="more">More</a>
+</div>
+<div class="clear"></div>
+            </div>
+        </div>
+    </section>
+</div>
+<footer class="footer"></footer>
+</div>
+</body>
+</html>

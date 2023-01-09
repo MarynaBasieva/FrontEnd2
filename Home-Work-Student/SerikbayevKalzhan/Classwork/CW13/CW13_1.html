@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position classes</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        width: 1170px;
+        margin: 0 auto;
+    }
+    .parent .box{
+        width:32.111%;
+        box-sizing: border-box;
+        padding:20px;
+        background: #ccc;
+        margin-right: 20px;
+        margin-bottom: 30px;
+    }
+    .fl{
+        float: left;
+    }
+    .clear{
+        clear:both;
+    }
+    .parent .box:nth-child(3),
+    .parent .box:nth-child(6){
+        margin-right: 0;
+    }
+    img{
+        max-width:100%;
+        width:auto;
+        height:auto;
+    }
+    .parent .box img{
+        width:100%;
+    }
+    .parent .box h2{
+        font-size: 23px;
+        margin: 15px 0;
+    }
+    .parent .box .text{
+        font-size: 14px;
+        text-align: justify;
+        line-height: 21px;
+        margin-bottom: 20px;
+    }
+    .more{
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        padding: 7px 0;
+        text-align: center;
+        background: rgb(14, 77, 119);
+        color: #fff;
+        height: 40px;
+        transition: all ease 0.3s;
+        line-height: 38px;
+    }
+    .more:hover{
+        background: rgb(145, 107, 163);
+    }
+    .parent .box:hover .more{
+        background: rgb(145, 107, 163);
+    }
+</style>
+<body>
+    <section class="blog_panda">
+        <div class="container">
+            <div class="parent">
+                <div class="box fl">
+                    <img src="img2/panda.gif" alt="Panda" />
+                    <h2>Little Panda</h2>
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo labore, quaerat ducimus vero ipsum iure corrupti veniam laborum quo numquam, porro quisquam perspiciatis mollitia odio, distinctio atque sit reiciendis repellat!</div>
+                    <a href="#" class="more">More</a>
+                </div>
+                <div class="box fl">
+                    <img src="img2/panda.gif" alt="Panda" />
+                    <h2>Little Panda</h2>
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo labore, quaerat ducimus vero ipsum iure corrupti veniam laborum quo numquam, porro quisquam perspiciatis mollitia odio, distinctio atque sit reiciendis repellat!</div>
+                    <a href="#" class="more">More</a>
+                </div>
+                <div class="box fl">
+                    <img src="img2/panda.gif" alt="Panda" />
+                    <h2>Little Panda</h2>
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo labore, quaerat ducimus vero ipsum iure corrupti veniam laborum quo numquam, porro quisquam perspiciatis mollitia odio, distinctio atque sit reiciendis repellat!</div>
+                    <a href="#" class="more">More</a>
+                </div>
+                <div class="box fl">
+                    <img src="img2/panda.gif" alt="Panda" />
+                    <h2>Little Panda</h2>
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo labore, quaerat ducimus vero ipsum iure corrupti veniam laborum quo numquam, porro quisquam perspiciatis mollitia odio, distinctio atque sit reiciendis repellat!</div>
+                    <a href="#" class="more">More</a>
+                </div>
+                <div class="box fl">
+                    <img src="img2/panda.gif" alt="Panda" />
+                    <h2>Little Panda</h2>
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo labore, quaerat ducimus vero ipsum iure corrupti veniam laborum quo numquam, porro quisquam perspiciatis mollitia odio, distinctio atque sit reiciendis repellat!</div>
+                    <a href="#" class="more">More</a>
+                </div>
+                <div class="box fl">
+                    <img src="img2/panda.gif" alt="Panda" />
+                    <h2>Little Panda</h2>
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo labore, quaerat ducimus vero ipsum iure corrupti veniam laborum quo numquam, porro quisquam perspiciatis mollitia odio, distinctio atque sit reiciendis repellat!</div>
+                    <a href="#" class="more">More</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
