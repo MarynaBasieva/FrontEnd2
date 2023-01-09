@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HW13</title>
+    <script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
 </head>
 <style>
@@ -186,7 +188,110 @@
         color: #fff;
     }
 /* footer  */
-   
+
+.btn_baner {
+    text-align: center;
+    display: block;
+    position: fixed;
+    left: 80%;
+    top: 80%;
+    background: linear-gradient(#16bef1, #350bdb);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 50px;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+    height: 80px;
+    width: 250px;
+}
+
+.btn_baner:hover {
+    background: linear-gradient(#043e84, #4d8de5);
+    font-size: 21px;
+}
+.btn_baner:active {
+    background: linear-gradient(#4d8de5, #139acf); 
+    cursor: grabbing;
+}
+.parent_modal{
+    position: absolute;
+    background: rgb(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.wrapp_modal {
+    background: linear-gradient(#044984, #0BB9DB);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    height: 350px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.parent_modal .wrapp_modal h2 {
+    font-weight: 400;
+    margin: 15px 0;
+    color: rgb(222, 220, 220);
+}
+.parent_modal .wrapp_modal a {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    color: rgb(214, 213, 213);
+    text-decoration: none;
+}
+.parent_modal .wrapp_modal form input,
+.parent_modal .wrapp_modal form button {
+    display: block;
+}
+.parent_modal .wrapp_modal form input {
+    margin: 15px 0;
+    padding-bottom: 10px;
+    width: 300px;
+    background: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    border-bottom: rgb(192, 192, 192) 1px solid;
+}
+.parent_modal .wrapp_modal form input::placeholder {
+    color: rgb(222, 220, 220);
+}
+.parent_modal .wrapp_modal form button {
+    padding: 10px 0;
+    width: 100%;
+    color: white;
+    background: linear-gradient(to right, #ed8961, #EC584E);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+    height: 40px;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5);
+}
+.parent_modal .wrapp_modal form button:hover {
+    border: 1px solid grey;
+    cursor: pointer;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
 </style>
 <body>
     <div class="for_page">
@@ -255,7 +360,22 @@
                             Повышаем квалификацию <br>
                             Помагаем трудоустройству <br>
                         </div>
-
+                    </div>
+                    <div class="btn_baner">Обратный звонок</div>
+                </div>
+                <div class="parent_modal">
+                    <div class="wrapp_modal">
+                        <div class="closed">x</div>
+                        <div class="form_modal">
+                            <h2>Heading Form</h2>
+                            <form class="form">
+                                <input type="text" class="input" placeholder="Ваше имя" required>
+                                <input type="text" class="input" placeholder="Ваш телефон" required>
+                                <input type="text" class="input" placeholder="Ваш e-mail" required>
+                                <input type="text" class="input" placeholder="Ваш город" required>
+                                <button class="btn">Отправить</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </section>
