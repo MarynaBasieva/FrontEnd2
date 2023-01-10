@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW13</title>
+    <script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<style>
+/* general style */
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    html,
+    body{
+        height: 100%;
+    }
+    .for_page{
+        min-height: 100%;
+        position: relative;
+    }
+    .page{
+        padding-bottom: 219px;
+    }
+    .fl{
+        float: left;
+    }
+    .fr{
+        float: right;
+    }
+    .clear{
+        clear: both;
+    } 
+    img{
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+    .container{
+        width: 1170Px;
+        margin: 0 auto;
+    }
+/* general style */
+
+/* Header */
+    .header{
+        background: #CDCDCD;
+        padding-top: 20px;
+    }
+    .logo{
+        width: 150px;
+    }
+    .slogan{
+        margin-left: 50px;
+        font-size: 20px;
+        padding-top: 35px;
+    }
+    .contact_header a{
+        display: block;
+        text-decoration: none;
+        color: #242222;
+        transition: all ease 0.3s;
+    }
+    .contact_header a:hover{
+        color: #080378;
+    }
+    /* Nav */
+    .nav{
+        background: #130066;
+    }
+    .nav ul.sub_menu li{
+        list-style: none;
+        display: inline-block;
+    }
+    .nav ul.sub_menu > li > a{
+        color: #fff;
+        font-size: 15px;
+        text-decoration: none;
+        padding: 20px 30px;
+        display: block;
+    }
+    .nav ul.sub_menu > li > a:hover{
+        background: #000;
+    }
+    .nav ul.sub_menu li ul.sub_menu{
+        opacity: 0;
+        visibility: hidden;
+        background: #0046B1;
+        width: 300px;
+        position: absolute;
+    }
+    .nav ul.sub_menu li:hover ul.sub_menu{
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav ul.sub_menu li ul.sub_menu li,
+    .nav ul.sub_menu li ul.sub_menu li a{
+        display: block;
+    }
+    /* Nav */
+/* Header */
+
+/* banner */
+    .banner{
+        background: url("img/banner.jpg") no-repeat;
+        padding: 200px 0;
+        background-size: cover;
+        background-position: center center;
+    }
+    .banner_text{
+        color: #fff;
+        padding: 30px;
+        background: rgb(0, 0, 0, 0.7);
+        width: 600px;
+    }
+    .banner_text div:first-child{
+        margin-bottom: 40px;
+        font-size: 30px;
+    }
+    .banner_text div:last-child{
+        font-size: 20px;
+        line-height: 24px;
+    }
+/* banner */
+
+/* About */
+.about{
+    background: #af9eea;
+    padding: 60px 0;
+}
+.about h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #333;
+}
+.sidebar{
+    background: #333;
+    padding: 10px;
+    width: 30%;
+    display: block;
+    margin-right: 30px;
+}
+.sidebar ul{
+    list-style: none;
+}
+.sidebar ul li a{
+    padding: 8px;
+    padding-left: 5px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: solid 1px #fff;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.sidebar ul li a:hover{
+    background: #022996;
+    border-bottom: solid 1px transparent;
+}
+.content{
+    width: 65%;
+}
+.content figure{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.content p{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+/* About */
+/* footer */
+    .footer{
+        padding: 100px 0;
+        background: #333;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: #fff;
+    }
+/* footer  */
+
+.btn_baner {
+    text-align: center;
+    display: block;
+    position: fixed;
+    left: 80%;
+    top: 80%;
+    background: linear-gradient(#16bef1, #350bdb);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 50px;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+    height: 80px;
+    width: 250px;
+}
+
+.btn_baner:hover {
+    background: linear-gradient(#043e84, #4d8de5);
+    font-size: 21px;
+}
+.btn_baner:active {
+    background: linear-gradient(#4d8de5, #139acf); 
+    cursor: grabbing;
+}
+.parent_modal{
+    position: absolute;
+    background: rgb(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.wrapp_modal {
+    background: linear-gradient(#044984, #0BB9DB);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+    color: white;
+    height: 350px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.parent_modal .wrapp_modal h2 {
+    font-weight: 400;
+    margin: 15px 0;
+    color: rgb(222, 220, 220);
+}
+.parent_modal .wrapp_modal a {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 7px;
+    color: rgb(214, 213, 213);
+    text-decoration: none;
+}
+.parent_modal .wrapp_modal form input,
+.parent_modal .wrapp_modal form button {
+    display: block;
+}
+.parent_modal .wrapp_modal form input {
+    margin: 15px 0;
+    padding-bottom: 10px;
+    width: 300px;
+    background: transparent;
+    color: white;
+    outline: none;
+    border: none;
+    border-bottom: rgb(192, 192, 192) 1px solid;
+}
+.parent_modal .wrapp_modal form input::placeholder {
+    color: rgb(222, 220, 220);
+}
+.parent_modal .wrapp_modal form button {
+    padding: 10px 0;
+    width: 100%;
+    color: white;
+    background: linear-gradient(to right, #ed8961, #EC584E);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    transition: all 0.3s ease-in-out;
+    height: 40px;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5);
+}
+.parent_modal .wrapp_modal form button:hover {
+    border: 1px solid grey;
+    cursor: pointer;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+</style>
+<body>
+    <div class="for_page">
+        <div class="page">
+            <header class="header">
+                <div class="container">
+                    <a href="/" class="logo fl">
+                        <img src="img/logo.webp" alt="logo" title="logo">
+                    </a>
+
+                    <div class="slogan fl">
+                        Academy Front End
+                    </div>
+
+                    <div class="contact_headerfr ">
+                        <a href="tel:+77051234567">(705) 123 45 67</a>
+                        <a href="tel:+77771234567">(777) 123 45 67</a>
+                        <a href="mailto:frontend@gmail.com">frontend@gmail.com</a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <nav class="nav">
+                    <div class="container">
+                        <ul class="sub_menu">
+                            <li class="item_menu">
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="item_menu">
+                                <a href="#">About</a>
+                            </li>
+                            <li class="item_menu">
+                                <a href="#">Servise</a>
+                                <ul class="sub_menu">
+                                    <li class="item_menu">
+                                        <a href="#">Servise1</a>
+                                    </li>
+                                    <li class="item_menu">
+                                        <a href="#">Servise2</a>
+                                    </li>
+                                    <li class="item_menu">
+                                        <a href="#">Servise3</a>
+                                    </li>
+                                    <li class="item_menu">
+                                        <a href="#">Servise4</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="item_menu">
+                                <a href="#">Pcice</a>
+                            </li>
+                            <li class="item_menu">
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <section class="banner">
+                <div class="container">
+                    <div class="banner_text">
+                        <div>Академия популярных профессии</div>
+                        <div>
+                            Обучаем с нуля<br>
+                            Повышаем квалификацию <br>
+                            Помагаем трудоустройству <br>
+                        </div>
+                    </div>
+                    <div class="btn_baner">Обратный звонок</div>
+                </div>
+                <div class="parent_modal">
+                    <div class="wrapp_modal">
+                        <div class="closed">x</div>
+                        <div class="form_modal">
+                            <h2>Heading Form</h2>
+                            <form class="form">
+                                <input type="text" class="input" placeholder="Ваше имя" required>
+                                <input type="text" class="input" placeholder="Ваш телефон" required>
+                                <input type="text" class="input" placeholder="Ваш e-mail" required>
+                                <input type="text" class="input" placeholder="Ваш город" required>
+                                <button class="btn">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about">
+                <div class="container">
+                    <h1>About Company</h1>
+                    <sidebar class="sidebar fl">
+                        <ul class="sidebar_menu">
+                            <li class="item_menu">
+                                <a href="#">Catalog1</a>
+                            </li>
+                            <li class="item_menu">
+                                <a href="#">Catalog2</a>
+                            </li>
+                            <li class="item_menu">
+                                <a href="#">Catalog3</a>
+                            </li>
+                            <li class="item_menu">
+                                <a href="#">Catalog4</a>
+                            </li>
+                            <li class="item_menu">
+                                <a href="#">Catalog5</a>
+                            </li>
+                            <li class="item_menu">
+                                <a href="#">Catalog6</a>
+                            </li>
+                        </ul>
+                    </sidebar>
+
+                    <div class="content fl">
+                        <figure class="fl">
+                            <img src="img/avatar1.jpg" alt="img">
+                        </figure>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic alias, est ipsa exercitationem ea illo. Commodi voluptatibus incidunt exercitationem perspiciatis modi nostrum est placeat maiores libero aut debitis, expedita excepturi.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse dolorum harum, id nesciunt nemo ipsam quae odit ex. Molestiae assumenda maxime soluta commodi, accusamus dolorem saepe magnam harum eos quod.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium architecto possimus, nemo at facilis dolor minus assumenda, ducimus mollitia hic quidem facere ad. Minus minima incidunt distinctio omnis eum totam.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quo quasi voluptas, labore ad in asperiores provident soluta quia officiis quod facere, dolorem fuga rerum harum? Quidem facilis tempore laudantium?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores nobis minus nisi autem veritatis reiciendis quisquam ipsum praesentium obcaecati culpa, expedita magnam soluta vitae, quaerat dolorem harum delectus, laboriosam officiis?</p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                Footer
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>

@@ -4,6 +4,17 @@
     margin: 0;
 }
 
+html,
+body{
+	height: 100%;
+}
+.for_page{
+	position: relative;
+	min-height: 100%;
+}
+.page{
+  padding-bottom: 195px;
+}
 .container {
     width: 900px;
     margin: 0 auto;
@@ -196,6 +207,8 @@ footer {
     background: black;
     position: absolute;
     width: 100%;
+	left: 0;
+	bottom: 0;
 }
 
 footer p {

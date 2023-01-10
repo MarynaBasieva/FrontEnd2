@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>block</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    /* footer bottom */
+    html,
+    body{
+        height: 100%;
+    }
+    .for_page{
+        min-height: 100%;
+        position: relative;
+    }
+    .page{
+        padding-bottom: 200px;
+    }
+    .footer{
+        padding: 100px 0;
+        background: #000;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+    /* footer bottom */
+    .container{
+        width: 1170Px;
+        margin: 0 auto;
+    }
+    img{
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+    .header{
+        padding: 100px 0;
+        background: blue;
+    }
+    .blog_main{
+        padding: 60px 0;
+    }
+    .blog_post{
+        width: 32.111%;
+        box-sizing: border-box;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        float: left;
+    }
+    .clear{
+        clear: both;
+    }
+    .blog_post:nth-child(3),
+    .blog_post:nth-child(6),
+    .blog_post:nth-child(9){
+        margin-right: 0;
+    }
+    .blog_post .img_post img{
+        width: 100%;
+    }
+    .blog_post .img_post{
+        height: 210px;
+        overflow: hidden;
+    }
+    .blog_post h2{
+        margin: 20px 0;
+        min-height: 51px;
+        overflow: hidden;
+    }
+    .blog_post h2 a{
+        font-size: 20px;
+        color: #333;
+        text-decoration: none;
+        display: block;
+        line-height: 25px;
+    }
+    .blog_post h2 a:hover{
+        color: #080AA3;
+    }
+    .desc_blog_post{
+        font-size: 15px;
+        color: #333;
+        line-height: 20px;
+        max-height: 43px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    .btn_blog_post{
+        text-decoration: none;
+        display: block;
+        width: 153px;
+        background: #000;
+        text-align: center;
+        height: 40px;
+        color: #fff;
+        line-height: 34px;
+    }
+    .btn_blog_post:hover{
+        background: #080AA3;
+    }
+    .img_post{
+        position: relative;
+    }
+    .blog_post:hover .img_post::before{
+        content: "";
+        background: rgba(61, 13, 184, 0.5);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    .look{ 
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: rgb(23, 1, 107);
+        width: 150px;
+        height: 60px;
+        border: #fff solid 1px;
+        background: #fff;
+        border-radius: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 30px;
+        line-height: 55px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+        overflow: hidden;
+    }
+    .blog_post:hover .look{
+        opacity: 1;   
+    }
+</style>
+<body>
+    <div class="for_page">
+        <div class="page">
+            <header class="header"></header>
+            <section class="blog_main">
+                <div class="container">
+                    <div class="blog">
+        
+                        <!-- post 1 -->
+                        <article class="blog_post">
+                            <div class="img_post">
+                                <a href="https://youtu.be/yKrzARVuePw" class="look">Look</a>
+                                <img src="img/avatar1.jpg" alt="avatar">   
+                            </div>
+                            <h2>
+                                <a href="#">The 'Avatar: The Way of Water' Cast on First Impressions
+                                </a>
+                            </h2>
+                            <div class="desc_blog_post">New Avatar: The Way of Water stars Trinity Jo-Li Bliss, Jack Champion, Bailey Bass, and Jamie Flatters share their candid reactions to meeting and working with returning franchise stars.
+                            </div>
+                            <a href=""class="btn_blog_post">Подробнее</a>
+                            
+                        </article>
+                        <!-- post 1 -->
+        
+        
+                        <!-- post 2 -->
+                        <article class="blog_post">
+                            <div class="img_post">
+                                <img src="img/avatar2.jpg" alt="avatar">   
+                            </div>
+                            <h2>
+                                <a href="#">
+                                    The 'Avatar: The Way of Water' 
+                                </a>
+                            </h2>
+                            <div class="desc_blog_post">New Avatar: The Way of Water stars Trinity Jo-Li Bliss, Jack Champion, Bailey Bass, and Jamie Flatters share their candid reactions to meeting and working with returning franchise stars. New Avatar: The Way of Water stars Trinity Jo-Li Bliss, Jack Champion, Bailey Bass, and Jamie Flatters share their candid reactions to meeting and working with returning franchise stars.
+                            </div>
+                            <a href="#"class="btn_blog_post">Подробнее</a>
+                        </article>
+                        <!-- post 2 -->
+        
+        
+                        <!-- post 3 -->
+                        <article class="blog_post">
+                            <div class="img_post">
+                                <img src="img/Avatar3.png" alt="avatar">   
+                            </div>
+                            <h2>
+                                <a href="#">
+                                    The 'Avatar: The Way of Water' Cast on First Impressions The 'Avatars
+                                </a>
+                            </h2>
+                            <div class="desc_blog_post">New Avatar: The Way of Water stars Trinity Jo-Li Bliss, Jack Champion, Bailey Bass, and Jamie Flatters share their candid reactions to meeting and working with returning franchise stars.
+                            </div>
+                            <a href="#"class="btn_blog_post">Подробнее</a>
+                        </article>
+                        <!-- post 3 -->
+                        
+                        <!-- post 4 -->
+                        <article class="blog_post">
+                            <div class="img_post">
+                                <img src="img/Avatar3.png" alt="avatar">   
+                            </div>
+                            <h2>
+                                <a href="#">
+                                    The 'Avatar: The Way of Water'
+                                </a>
+                            </h2>
+                            <div class="desc_blog_post">New Avatar: The Way of Water stars Trinity Jo-Li Bliss, Jack Champion, Bailey Bass, and Jamie Flatters share their candid reactions to meeting and working with returning franchise stars.
+                            </div>
+                            <a href="#"class="btn_blog_post">Подробнее</a>
+                        </article>
+                        <!-- post 4 -->
+                        
+                        <!-- post 5 -->
+                        <article class="blog_post">
+                            <div class="img_post">
+                                <img src="img/avatar7.jpg" alt="avatar">   
+                            </div>
+                            <h2>
+                                <a href="#">
+                                    The 'Avatar: The Way of Water' Cast on First Impressions
+                                </a>
+                            </h2>
+                            <div class="desc_blog_post">New Avatar: The Way of Water stars Trinity Jo-Li Bliss, Jack Champion, Bailey Bass, and Jamie Flatters share their candid reactions to meeting and working with returning franchise stars.
+                            </div>
+                            <a href="#"class="btn_blog_post">Подробнее</a>
+                        </article>
+                        <!-- post 5 -->
+                        
+                        <!-- post 6 -->
+                        <article class="blog_post">
+                            <div class="img_post">
+                                <img src="img/avatar6.jpg" alt="avatar">   
+                            </div>
+                            <h2>
+                                <a href="#">
+                                    The 'Avatar: The Way of Water' Cast on First Impressions
+                                </a>
+                            </h2>
+                            <div class="desc_blog_post">New Avatar: The Way of Water stars Trinity Jo-Li Bliss, Jack Champion, Bailey Bass, and Jamie Flatters share their candid reactions to meeting and working with returning franchise stars.
+                            </div>
+                            <a href="#"class="btn_blog_post">Подробнее</a>
+                        </article>
+                        <!-- post 6 -->                
+        
+        
+                        <!-- post 7 -->
+                        <article class="blog_post">
+                            <div class="img_post">
+                                <img src="img/avatar7.jpg" alt="avatar">   
+                            </div>
+                            <h2>
+                                <a href="#">
+                                    The 'Avatar: The Way of Water' Cast on First Impressions
+                                </a>
+                            </h2>
+                            <div class="desc_blog_post">New Avatar: The Way of Water stars Trinity Jo-Li Bliss, Jack Champion, Bailey Bass, and Jamie Flatters share their candid reactions to meeting and working with returning franchise stars.
+                            </div>
+                            <a href="#"class="btn_blog_post">Подробнее</a>
+                        </article>
+                        <!-- post 7 -->
+        
+        
+                        <!-- post 8 -->
+                        <article class="blog_post">
+                            <div class="img_post">
+                                <img src="img/avatar8.jpg" alt="avatar">   
+                            </div>
+                            <h2>
+                                <a href="#">
+                                    The 'Avatar: The Way of Water' 
+                                </a>
+                            </h2>
+                            <div class="desc_blog_post">New Avatar: The Way of Water stars Trinity Jo-Li Bliss, Jack Champion, Bailey Bass, and Jamie Flatters share their candid reactions to meeting and working with returning franchise stars. New Avatar: The Way of Water stars Trinity Jo-Li Bliss, Jack Champion, Bailey Bass, and Jamie Flatters share their candid reactions to meeting and working with returning franchise stars.
+                            </div>
+                            <a href="#"class="btn_blog_post">Подробнее</a>
+                        </article>
+                        <!-- post 8 -->
+        
+                        <!-- post 9 -->
+                        <article class="blog_post">
+                            <div class="img_post">
+                                <img src="img/avatar1.jpg" alt="avatar">   
+                            </div>
+                            <h2>
+                                <a href="#">
+                                    The 'Avatar: The Way of Water' Cast on First Impressions The 'Avatar: The Way 
+                                </a>
+                            </h2>
+                            <div class="desc_blog_post">New Avatar: The Way of Water stars Trinity Jo-Li Bliss, Jack Champion, Bailey Bass, and Jamie Flatters share their candid reactions to meeting and working with returning franchise stars.
+                            </div>
+                            <a href="#"class="btn_blog_post">Подробнее</a>
+                        </article>
+                        <!-- post 9 -->
+                        <div class="clear"></div>
+                    
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer"></footer>
+    </div>
+    
+
+    
+</body>
+</html>

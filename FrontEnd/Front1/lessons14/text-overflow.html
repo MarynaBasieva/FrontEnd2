@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>text-overflow</title>
+</head>
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	.clip{
+		border: 1px solid #000;
+		padding: 5px;
+		width: 300px;
+		white-space: nowrap;/*запрещает перенос строки*/
+		overflow: hidden;/*обрезает все что мешает*/
+		text-overflow: ellipsis;/*Добавляет три точки*/
+	}
+	.word-wrap{
+		border: 1px solid #000;
+		padding: 5px;
+		width: 200px;
+		font-size: 18px;
+		word-wrap: break-word;
+	}
+	.word-break{
+		border: 1px solid #000;
+		padding: 5px;
+		width: 200px;
+		font-size: 18px;
+		word-break: break-all; /*Для переноса строки и букв*/
+	}
+</style>
+<body>
+	<main class="main">
+		<div class="clip">Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar</div>
+		
+		<div class="word-wrap">
+			<p>Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar </p>
+			<p>Lorem ipsum dolar</p>
+			<p>Lorem ipsum dolar</p>
+			<p>Lorem ipsum dolar</p>
+			<p>Lorem ipsum dolar</p>
+			<p>Lorem ipsum dolar</p>
+			<p>Lorem ipsum dolar</p>
+		</div>
+		
+		<div class="word-break">
+			<p>Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar </p>
+			<p>Lorem ipsum dolar</p>
+			<p>Lorem ipsum dolar</p>
+			<p>Lorem ipsum dolar</p>
+			<p>Lorem ipsum dolar</p>
+			<p>Lorem ipsum dolar</p>
+			<p>Lorem ipsum dolar</p>
+		</div>
+	</main>
+</body>
+</html>
