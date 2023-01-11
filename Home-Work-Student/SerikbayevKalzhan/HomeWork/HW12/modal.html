@@ -22,6 +22,7 @@
         background: rgb(0,0,0,0.7);
         top: 0;
         left: 0;
+        z-index: 0;
     }
     .wrap_modal{
         position: absolute;
@@ -32,6 +33,10 @@
         transform translate(-50%, -50%);
         background: #fff;
         padding: 15px 20px;
+        z-index: 1;
+    }
+    .form_modal{
+        z-index: 2;
     }
     .form_modal h2{
         text-align:center;
@@ -97,6 +102,7 @@
         cursor:pointer;
         background: palevioletred;
         padding: 0 20px;
+        z-index: 3;
     }
     .closed:hover{
         background: red;
