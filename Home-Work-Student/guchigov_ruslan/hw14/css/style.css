@@ -1,0 +1,158 @@
+ * {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; /* 62.5% = 10px */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Poppins', 'Verdana',  sans-serif;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Header-starts-here */
+.header {
+  max-height: 90px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 6px 0 0 50px;
+}
+
+.logo:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+  margin-right: 40px;
+  list-style: none;
+  font-size: 1.2rem;
+  letter-spacing: 1.5px;
+}
+
+.navigation-list__link {
+  display: block;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+
+.navigation-list__link:hover {
+  color: #ff553c;
+  text-shadow: 0 0 1px #000000;
+  transition: all 0.3s ease;
+}
+
+.button {
+  border: none;
+  background: #ff553c url('../img/search.svg') no-repeat center;
+  width: 90px;
+  height: 90px;
+}
+
+.button:hover {
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  cursor: pointer;
+  background: #ff553c url('../img/search_hover.svg') no-repeat center;
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Header-ends-here */
+
+/* Section welcome starts here */
+.welcome__content {
+  background: url('../img/main-img.jpg') no-repeat ;
+  height: 846px;
+}
+
+.welcome__text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 775px;
+  top: 215px;
+  height: 465px;
+  width: 488px;
+}
+
+.welcome__heading {
+  font-weight: 600;
+  font-size: 85px;
+  line-height: 95px;
+  letter-spacing: -2px;
+  color: #121212;
+}
+
+.welcome__description {
+  padding-top: 25px;
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+  line-height: 28px;
+  color: rgba(18, 18, 18, 0.7);
+}
+
+.welcome__link {
+  position: relative;
+  top: -25px;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  order: -1;
+  width: 406px;
+  height: 46px;
+  background: rgba(78, 154, 169, 0.15) url('../img/arrow-right.svg') no-repeat  right 20px center;;
+}
+
+.new-recipe {
+  display: block;
+  width: 93px;
+  height: 26px;
+  position: relative;
+  left: -16px;
+  box-sizing: border-box;
+  text-align: center;
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 9px;
+  padding: 8px 15px;
+  letter-spacing: 1px;
+  color: #4E9AA9;
+  background-color: #ffffff;
+}
+
+.recipe-link {
+  position: relative;
+  left: -38px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: #4E9AA9;
+}
+/*Section-welcome-ends-here */
