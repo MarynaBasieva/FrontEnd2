@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>vertical-text</title>
+</head>
+<style>
+	.text1{
+		writing-mode: horizontal-tb;
+	}
+	span.text2{
+		writing-mode:vertical-rl;
+	}
+	span.text3{
+		writing-mode:vertical-lr;
+	}
+	p.text2{
+		writing-mode: horizontal-tb;
+	}
+
+</style>
+<body>
+	<p class="text1">writing-mode</p>
+	<p>Lorem ipsum dolar<span class="text2">vertical-rl</span>writing-mode</p>
+	<p class="text2">Lorem ipsum color <span class="text3">vertical-rl</span></p>
+</body>
+</html>
