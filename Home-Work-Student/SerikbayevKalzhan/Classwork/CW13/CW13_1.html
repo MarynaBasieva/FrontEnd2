@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,51 +8,95 @@
     <title>Position classes</title>
 </head>
 <style>
-    *{
+    * {
         margin: 0;
         padding: 0;
     }
-    .container{
+
+    .container {
         width: 1170px;
         margin: 0 auto;
     }
-    .parent .box{
-        width:32.111%;
+
+    .parent .box {
+        width: 32.111%;
         box-sizing: border-box;
-        padding:20px;
+        padding: 20px;
         background: #ccc;
         margin-right: 20px;
         margin-bottom: 30px;
     }
-    .fl{
+    .parent .box .child-box{
+        position:relative;
+    }
+    .parent .box .child-box::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(0,0,0,0.3) url("img2/fly.png") no-repeat;
+        background-position: center center;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .parent .box .child-box:hover::before{
+        opacity: 1;
+        visibility: visible;
+    }
+    .more_box{
+        color: #fff;
+        display: block;
+        text-decoration: none;
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        visibility: hidden;
+    }
+    .parent .box .child-box:hover .more_box{
+        opacity: 1;
+        visibility: visible;
+        bottom: 20px;
+    }
+    .fl {
         float: left;
     }
-    .clear{
-        clear:both;
+
+    .clear {
+        clear: both;
     }
+
     .parent .box:nth-child(3),
-    .parent .box:nth-child(6){
+    .parent .box:nth-child(6) {
         margin-right: 0;
     }
-    img{
-        max-width:100%;
-        width:auto;
-        height:auto;
+
+    img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
     }
-    .parent .box img{
-        width:100%;
+
+    .parent .box img {
+        width: 100%;
     }
-    .parent .box h2{
+
+    .parent .box h2 {
         font-size: 23px;
         margin: 15px 0;
     }
-    .parent .box .text{
+
+    .parent .box .text {
         font-size: 14px;
         text-align: justify;
         line-height: 21px;
         margin-bottom: 20px;
     }
-    .more{
+
+    .more {
         text-decoration: none;
         display: block;
         width: 100%;
@@ -63,51 +108,66 @@
         transition: all ease 0.3s;
         line-height: 38px;
     }
-    .more:hover{
+
+    .more:hover {
         background: rgb(145, 107, 163);
     }
-    .parent .box:hover .more{
+
+    .parent .box:hover .more {
         background: rgb(145, 107, 163);
     }
 </style>
+
 <body>
     <section class="blog_panda">
         <div class="container">
             <div class="parent">
                 <div class="box fl">
-                    <img src="img2/panda.gif" alt="Panda" />
+                    <div class="child-box">
+                        <img src="img2/panda.gif" alt="Panda" />
+                        <a href="#" class="more_box">More</a>
+                    </div>
                     <h2>Little Panda</h2>
-                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo labore, quaerat ducimus vero ipsum iure corrupti veniam laborum quo numquam, porro quisquam perspiciatis mollitia odio, distinctio atque sit reiciendis repellat!</div>
+                    <a href="#" class="more">More</a>
+                </div>
+                <div class="box fl">
+                    <div class="child-box">
+                        <img src="img2/panda.gif" alt="Panda" />
+                        <a href="#" class="more_box">More</a>
+                    </div>
+                    <h2>Little Panda</h2>
+                    <a href="#" class="more">More</a>
+                </div>
+                <div class="box fl">
+                    <div class="child-box">
+                        <img src="img2/panda.gif" alt="Panda" />
+                        <a href="#" class="more_box">More</a>
+                    </div>
+                    <h2>Little Panda</h2>
                     <a href="#" class="more">More</a>
                 </div>
                 <div class="box fl">
                     <img src="img2/panda.gif" alt="Panda" />
                     <h2>Little Panda</h2>
-                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo labore, quaerat ducimus vero ipsum iure corrupti veniam laborum quo numquam, porro quisquam perspiciatis mollitia odio, distinctio atque sit reiciendis repellat!</div>
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo labore, quaerat
+                        ducimus vero ipsum iure corrupti veniam laborum quo numquam, porro quisquam perspiciatis
+                        mollitia odio, distinctio atque sit reiciendis repellat!</div>
                     <a href="#" class="more">More</a>
                 </div>
                 <div class="box fl">
                     <img src="img2/panda.gif" alt="Panda" />
                     <h2>Little Panda</h2>
-                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo labore, quaerat ducimus vero ipsum iure corrupti veniam laborum quo numquam, porro quisquam perspiciatis mollitia odio, distinctio atque sit reiciendis repellat!</div>
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo labore, quaerat
+                        ducimus vero ipsum iure corrupti veniam laborum quo numquam, porro quisquam perspiciatis
+                        mollitia odio, distinctio atque sit reiciendis repellat!</div>
                     <a href="#" class="more">More</a>
                 </div>
                 <div class="box fl">
                     <img src="img2/panda.gif" alt="Panda" />
                     <h2>Little Panda</h2>
-                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo labore, quaerat ducimus vero ipsum iure corrupti veniam laborum quo numquam, porro quisquam perspiciatis mollitia odio, distinctio atque sit reiciendis repellat!</div>
-                    <a href="#" class="more">More</a>
-                </div>
-                <div class="box fl">
-                    <img src="img2/panda.gif" alt="Panda" />
-                    <h2>Little Panda</h2>
-                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo labore, quaerat ducimus vero ipsum iure corrupti veniam laborum quo numquam, porro quisquam perspiciatis mollitia odio, distinctio atque sit reiciendis repellat!</div>
-                    <a href="#" class="more">More</a>
-                </div>
-                <div class="box fl">
-                    <img src="img2/panda.gif" alt="Panda" />
-                    <h2>Little Panda</h2>
-                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo labore, quaerat ducimus vero ipsum iure corrupti veniam laborum quo numquam, porro quisquam perspiciatis mollitia odio, distinctio atque sit reiciendis repellat!</div>
+                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo labore, quaerat
+                        ducimus vero ipsum iure corrupti veniam laborum quo numquam, porro quisquam perspiciatis
+                        mollitia odio, distinctio atque sit reiciendis repellat!</div>
                     <a href="#" class="more">More</a>
                 </div>
                 <div class="clear"></div>
@@ -115,4 +175,5 @@
         </div>
     </section>
 </body>
+
 </html>
