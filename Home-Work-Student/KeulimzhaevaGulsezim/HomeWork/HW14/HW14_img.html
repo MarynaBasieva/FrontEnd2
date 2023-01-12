@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW14_img</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        max-width: 100%;
+        width: auto;
+        height: auto;  
+    }
+    .container{
+        width: 1170px;
+        margin: 0 auto; 
+        position: relative;
+    }
+    .box{
+        width: 300px;
+		height: 240px;
+    }
+    .box-image{
+        position: absolute;
+		left: 30px;
+        top: 30px;
+		z-index: 2;
+    }
+    .box-border{
+        position: absolute;
+		left: 50px;
+		top: 40px;
+		z-index: 1;
+        border: solid 5px rgb(216, 211, 211);
+    }
+
+
+</style>
+<body>
+    <section class="index">
+        <div class="container">
+            <div class="box-image box">
+                <img src="img/HW14.jpg" alt="coffee">    
+            </div>
+            <div class="box-border box"></div>
+        </div>
+    </section>
+</body>
+</html>
