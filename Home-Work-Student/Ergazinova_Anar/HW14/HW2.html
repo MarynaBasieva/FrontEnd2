@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+         * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body {
+            display: block;
+            height: 100%;
+        }
+
+         .for_page {
+            min-height: 100%;
+            position: relative;
+        }
+
+
+        .oval {
+            left: 50px;
+            top: 30px;
+            bottom: 30px;
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 40px;
+            background: #1DC6D1;
+        }
+
+        .C {
+            left: 60.8px;
+            top: 39px;
+            bottom: 39px;
+            position: absolute;
+            width: 9.5px;
+            height: 12px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 12px;
+            color: #FFFFFF;
+        }
+
+        .slogan {
+            left: 90px;
+            top: 34px;
+            bottom: 33px;
+            position: absolute;
+            width: 91px;
+            height: 23px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 23px;
+            letter-spacing: 1px;
+            color: #11BCC7;
+            mix-blend-mode: normal;
+        }
+
+        .nav .menu {
+            left: 481px;
+            top: 13px;
+            bottom: 33px;
+            position: absolute;
+        }
+
+        .nav ul.sub-menu li{
+            list-style: none;
+            display: inline-block;
+            position: relative;
+        }
+
+        .nav ul.sub-menu li{
+            list-style: none;
+            display: inline-block;
+            position: relative;
+        }
+
+        .nav ul.sub-menu > li > a{
+            font-family: 'Poppins';
+            color:rgb(0, 0, 0);
+            font-size: 15px;
+            padding: 20px 30px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .search {
+            right: 0;
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            background: #FF553C;
+        }
+
+        .lupa .circle {
+            top: 34.5px;
+            right: 35px;
+            position: absolute;
+            width: 16.5px;
+            height: 16.5px;
+            border: 2px solid #FFFFFF;
+            border-radius: 40px;
+        }
+
+        .lupa .line {
+            top: 52px;
+            right: 30px;
+            position: absolute;
+            width: 6.9px;
+            height: 9px;
+            border: 2px solid #ffffff00;
+            background-image: linear-gradient(to bottom left, transparent 35%, #fff, transparent 65% );
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            top: 90px;
+            bottom: 100px;
+            display: block;
+            position: absolute;
+            background: url("background.png") no-repeat;
+            width: 1568px;
+            height: 1245px;
+        }
+
+        .container .rectangle {
+            top: 190px;
+            left: 773px;
+            position: absolute;
+            width: 406px;
+            height: 46px;
+            background: #4E9AA9;
+            opacity: 0.15;
+        }
+
+        .container .rectangle1 {
+            top: 200px;
+            left: 780px;
+            position: absolute;
+            width: 93px;
+            height: 26px;
+            background: #FFFFFF;
+        }
+
+        .container .recipe {
+            top: 208px;
+            left: 796px;
+            position: absolute;
+            width: 63px;
+            height: 9px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 9px;
+            line-height: 9px;
+            letter-spacing: 1px;
+            color: #4E9AA9;
+        }
+
+        .container .def {
+            top: 204px;
+            left: 901px;
+            position: absolute;
+            width: 218px;
+            height: 18px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            letter-spacing: 0.5px;
+            color: #4E9AA9;
+        }
+
+        .container .strelka {
+            top: 208.9px;
+            left: 1150.9px;
+            position: absolute;
+            width: 5.72px;
+            height: 5.72px;
+            border: 1px solid #4E9AA9;
+            transform: rotate(-135deg);
+        }
+
+        .container .line2 {
+            top: 208.9px;
+            left: 1150.9px;
+            position: absolute;
+            width: 0.6px;
+            height: 9.11px;
+            border: 1px solid #4E9AA9;
+            background-image: linear-gradient(to bottom left, transparent 50%, #4E9AA9, transparent 50% );
+            background-repeat: no-repeat;
+            transform: rotate(-90deg);
+        }
+
+        .container h1 {
+            top: 261px;
+            left: 772px;
+            position: absolute;
+            width: 488px;
+            height: 285px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 85px;
+            line-height: 95px;
+            letter-spacing: -2px;
+            color: #121212;
+
+        }
+
+        .container p {
+            top: 571px;
+            left: 772px;
+            bottom: 200px;
+            position: absolute;
+            width: 443px;
+            height: 84px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;line-height: 28px;
+            letter-spacing: 0.5px;
+            color: #121212;
+            opacity: 0.7;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="for_page">
+        <div class="page">
+            <header class="header">
+                <div class="container1">
+                    <div class="oval">
+                    </div>
+                    <div class="C">
+                        J
+                    </div>
+                    <div class="slogan">
+                        JUICEDAILY
+                    </div>
+                    <nav class="nav">
+                        <div class="menu">
+                            <ul class="sub-menu">
+                                <li class="item-menu">
+                                    <a href="#">BROWSE</a>
+                                </li>
+                                <li class="item-menu">
+                                    <a href="#">TRENDING</a>
+                                </li>
+                                <li class="item-menu">
+                                    <a href="#">CONTRIBUTORS</a>
+                                </li>
+                                <li class="item-menu">
+                                    <a href="#">COMMUNITY</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="search"></div>
+                    <div class="lupa">
+                        <div class="circle"></div>
+                        <div class="line"></div>
+        
+            </header>
+            <div class="container">
+                <div class="rectangle"></div>
+                <div class="rectangle1"></div>
+                <div class="recipe">NEW RECIPE</div>
+                <div class="def">Delicious fruit juice combinations</div>
+                <div class="strelka"></div>
+                <div class="line2"></div>
+                <h1>Simple and Tasty Juice Recipes</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+             </div>
+             <footer class="footer">
+                <div class="container2"></div>
+            </footer>
+        </div>
+</body>
+</html>
